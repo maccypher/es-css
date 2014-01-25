@@ -10,3 +10,7 @@ header {
 
 	border-radius: 10px;
 }
+nav#primary {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

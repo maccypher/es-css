@@ -1,4 +1,4 @@
-# eCSS
+# es:CSS
 ## essential CSS framework
 
 This framework is inspired by iKreativ - Workless. I don't wanna present just another clone/fork of "Workless". That's why I built it from scratch, took some of the concepts from iKreativ, adopted some of the techniques and spiced it up with some own knowledge.
@@ -95,4 +95,8 @@ Modernizr is needed to enable HTML5 & CSS3 features in old browsers.
 If you need to put some custom javascript somewhere, this is the right place. Initially the file holds some instructions to init uniform.js, but you can extend it as you like.
 
 
+<<<<<<< HEAD
 ----
+=======
+* initial commit
+>>>>>>> c95beea84d32bab8bccd4dcae8870c5e0f3f9491

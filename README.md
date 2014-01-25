@@ -36,9 +36,9 @@ This software is licensed under the
 	+ img
 	+ js
 
-#### [assets/css/](assets/css/)
+#### [assets/css/](es-css/assets/css/)
 
-Contains all basic CSS files. Put your custom / app specific CSS files in here. The folder contains a php file: "**[minified.css.php](assets/css/minified.css.php)**". If you host your project on php supported webspace, you can use this php file to minify all you CSS.
+Contains all basic CSS files. Put your custom / app specific CSS files in here. The folder contains a php file: "**[minified.css.php](es-css/assets/css/minified.css.php)**". If you host your project on php supported webspace, you can use this php file to minify all you CSS.
 
 Instead of of using:
 
@@ -64,17 +64,17 @@ To add your custom CSS file into the minifier add it at the end, but right befor
 	include('your_custom_css.css');
 	
 	
-#### [assets/fonts/](assets/fonts/)
+#### [assets/fonts/](es-css/assets/fonts/)
 
 This folder contains the basically the FontAwesome icon font file. If needed you could put your custom font files in here. But **don't forget to link them**! This wont happen automatically. ;)
 
 
-#### [assets/img/](assets/img/)
+#### [assets/img/](es-css/assets/img/)
 
 The **img/** folder only contains the sprite image for "**uniform**" form styling.
 You can find the PSD resource of the used uniform sprite in the "**[src/](src/)**" folder.
 
-#### [assets/js/](assets/js/)
+#### [assets/js/](es-css/assets/js/)
 
 4 files are located here:
 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Es-css by maccypher</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Es-css</h1>
+        <h2>essential CSS framework</h2>
+        <a href="https://github.com/maccypher/es-css" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="escss" class="anchor" href="#escss"><span class="octicon octicon-link"></span></a>es:CSS</h1>
+
+<h2>
+<a name="essential-css-framework" class="anchor" href="#essential-css-framework"><span class="octicon octicon-link"></span></a>essential CSS framework</h2>
+
+<p>This framework is inspired by iKreativ - Workless. I don't wanna present just another clone/fork of "Workless". That's why I built it from scratch, took some of the concepts from iKreativ, adopted some of the techniques and spiced it up with some own knowledge.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This software is licensed under the </p>
+
+<p><a href="dbad_license.md">Don't Be A Dick Licens</a></p>
+
+<hr><h1>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To Do:</h1>
+
+<h3>
+<a name="lots-of-conceptual-work-left-" class="anchor" href="#lots-of-conceptual-work-left-"><span class="octicon octicon-link"></span></a>Lots of conceptual work left ...</h3>
+
+<ul>
+<li><del>bring concept of basic folder structure to an end</del></li>
+<li><del>figure out the essentially needed files</del></li>
+<li><del>create a simple design with extrem usability</del></li>
+<li>WIP: keep basic files as generic as possible</li>
+</ul><h4>
+<a name="release-v01" class="anchor" href="#release-v01"><span class="octicon octicon-link"></span></a>Release v0.1</h4>
+
+<ul>
+<li>initial commit</li>
+</ul><hr><h2>
+<a name="folder-structure" class="anchor" href="#folder-structure"><span class="octicon octicon-link"></span></a>Folder Structure</h2>
+
+<p>/root</p>
+
+<ul>
+<li>assets
+
+<ul>
+<li>css</li>
+<li>font</li>
+<li>img</li>
+<li>js</li>
+</ul>
+</li>
+</ul><h4>
+<a name="assetscss" class="anchor" href="#assetscss"><span class="octicon octicon-link"></span></a><a href="es-css/assets/css/">assets/css/</a>
+</h4>
+
+<p>Contains all basic CSS files. Put your custom / app specific CSS files in here. The folder contains a php file: "<strong><a href="es-css/assets/css/minified.css.php">minified.css.php</a></strong>". If you host your project on php supported webspace, you can use this php file to minify all you CSS.</p>
+
+<p>Instead of of using:</p>
+
+<pre><code>...
+&lt;link href="assets/css/typo.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/forms.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/tables.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/helpers.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/scaffold.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/icons.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/plugins.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/buttons.css" rel="stylesheet"&gt;
+...
+</code></pre>
+
+<p>you can keep it short in just on line in your HTML:</p>
+
+<pre><code>...
+&lt;link href="assets/css/minified.css.php" rel="stylesheet"&gt;
+...
+</code></pre>
+
+<p>To add your custom CSS file into the minifier add it at the end, but right before the "<strong>ob_end_flush();</strong>" function. Like this:</p>
+
+<pre><code>include('your_custom_css.css');
+</code></pre>
+
+<h4>
+<a name="assetsfonts" class="anchor" href="#assetsfonts"><span class="octicon octicon-link"></span></a><a href="es-css/assets/fonts/">assets/fonts/</a>
+</h4>
+
+<p>This folder contains the basically the FontAwesome icon font file. If needed you could put your custom font files in here. But <strong>don't forget to link them</strong>! This wont happen automatically. ;)</p>
+
+<h4>
+<a name="assetsimg" class="anchor" href="#assetsimg"><span class="octicon octicon-link"></span></a><a href="es-css/assets/img/">assets/img/</a>
+</h4>
+
+<p>The <strong>img/</strong> folder only contains the sprite image for "<strong>uniform</strong>" form styling.
+You can find the PSD resource of the used uniform sprite in the "<strong><a href="src/">src/</a></strong>" folder.</p>
+
+<h4>
+<a name="assetsjs" class="anchor" href="#assetsjs"><span class="octicon octicon-link"></span></a><a href="es-css/assets/js/">assets/js/</a>
+</h4>
+
+<p>4 files are located here:</p>
+
+<pre><code>jquery-2.0.2.min.js
+</code></pre>
+
+<p>Of course jQuery. It's basically needed for "<strong>uniform.js</strong>".</p>
+
+<pre><code>jquery.uniform.min.js
+</code></pre>
+
+<p>This jQuery plugin styles all form elements in a sexy way. But the best thing is, that it styles form elements cross-browser compatible.</p>
+
+<pre><code>modernizr.min.js
+</code></pre>
+
+<p>Modernizr is needed to enable HTML5 &amp; CSS3 features in old browsers.</p>
+
+<pre><code>app.js
+</code></pre>
+
+<p>If you need to put some custom javascript somewhere, this is the right place. Initially the file holds some instructions to init uniform.js, but you can extend it as you like.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/maccypher/es-css/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/maccypher/es-css/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/maccypher/es-css"></a> is maintained by <a href="https://github.com/maccypher">maccypher</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>

@@ -1,0 +1,12 @@
+/**
+* app.css
+* put your specific CSS declarartions here:
+*/
+header {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2% 5%;
+	background-color: #ddd;
+
+	border-radius: 10px;
+}

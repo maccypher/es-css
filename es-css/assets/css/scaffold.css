@@ -1,0 +1,160 @@
+/* scaffold.css */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+header {
+	float: none;
+	clear: both;
+	padding: 3% 0 2% 0;
+	margin-bottom: 1%;
+
+	position: relative;
+	width: 80%;
+	margin-top: 20px;
+	padding: 20px 10%;
+}
+footer {	
+	margin-top: 2% !important;
+	padding-bottom: 3%;
+	text-align: center;
+	float: none;
+	clear: both;
+}
+hr {
+	float: none;
+	clear: both;
+	border: 0;
+	border-bottom: 1px solid #d8d9de;
+	height: 20px;
+}
+.aligncenter {
+	text-align: center;
+}
+.clear {
+	float: none;
+	clear: both;
+}
+#logo {
+	width: 90%;
+	position: relative;
+	margin: 1% auto;
+	white-space: nowrap;
+	font-size: 250%;
+	text-align: center;
+}
+
+#logo > small {
+	font-size: 40%;
+	display: none;
+}
+nav#primary {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
+}
+nav#primary ul {
+	margin: 0;
+	padding: 0;
+}
+nav#primary ul li {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.base {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1% 0 3%;
+	float: none;
+	clear: both;
+}
+.one-full,
+.one-half,
+.one-third,
+.two-third,
+.one-quarter {
+	margin-right: 0px; 
+	width: 100%;
+	float: left; 
+}
+
+/* iPhone landscape */
+@media (min-width: 480px) {
+	#logo > small {
+		display: none;
+	}
+}
+
+/* Small tablet portrait */
+@media (min-width: 640px) {
+	.base {
+		width: 90%;
+	}
+}
+
+/* iPad portrait */
+@media (min-width: 768px) {
+	#logo {
+		text-align: left;
+		width: 20%;
+		margin-left: 5%;
+		float: left;
+	}	
+	#logo > small {
+		display: block;
+	}
+	nav#primary {
+		text-align: right;
+		width: 60%;
+		float: right;
+		margin-right: 5%;
+	}
+	.base {
+		width: 90%;
+	}
+	.one-full {
+		width: 100%;
+	}
+	.one-half {
+		width: 48%;
+		margin-right: 4%;
+	}
+	.one-third {
+		width: 30%;
+		margin-right: 5%;
+	}
+	.two-third {
+		width: 65%;
+		margin-right: 5%;
+	}
+	.one-quarter {
+		width: 22%;
+		margin-right: 4%;
+	}
+}
+
+/* Small browser / iPad landscape */
+@media (min-width: 1024px) {
+}
+
+/* Generic browser */
+@media (min-width: 1280px) {
+
+}
+
+/* Large browser */
+@media (min-width: 1600px) {
+	#logo {
+	}
+	#logo > small {
+		display: block;
+	}
+}
+
+.last {
+	margin-right: 0 !important;
+}

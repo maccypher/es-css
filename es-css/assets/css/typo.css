@@ -1,0 +1,166 @@
+/* typo.css */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic);
+
+html,
+body {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	font-size: 102%;
+	-webkit-text-size-adjust: 102%;
+	-ms-text-size-adjust: 102%;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+header {
+	font-size: 2em;
+}
+
+a {
+	color: #245b8c;
+	text-decoration: none;
+}
+a:hover {
+	color: #6fade4;
+}
+strong {
+	font-weight: 700;
+}
+nav a {
+	font-size: 1.2em;
+	line-height: 1.0em;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.8em;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul li {
+	display: inline-block;
+}
+input,
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="email"],
+textarea {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+}
+/* List Styling */
+ul {
+	list-style-type: disc;
+}
+ol {}
+.roman {
+	list-style-type: upper-roman;
+}
+.big-icons i {
+	font-size: 1.3em;
+	line-height: 1.6em;
+}
+.xxl-icons i {
+	font-size: 1.8em;
+	line-height: 1.8em;
+}
+/**
+ * Blue
+ */
+.blue,
+.blue:visited {
+	color: #1945cb;
+}
+.blue:hover {
+	color: #315ee6;
+}
+
+/**
+ * Purple
+ */
+.purple,
+.purple:visited {
+	color: #8453dc;
+}
+.purple:hover {
+	color: #996beb;
+}
+
+/**
+ * Pink
+ */
+.pink, 
+.pink:visited {
+	color: #fe57a1;
+}
+.pink:hover {
+	color: #fe7eb6;
+}
+/**
+ * Green
+ */
+.green, 
+.green:visited {
+	color: #91bd09;
+}
+.green:hover {
+	color: #aad427;
+}
+/** 
+ * Aqua
+ */
+.aqua, 
+.aqua:visited {
+	color: #2daebf;
+}
+.aqua:hover {
+	color: #46c7d8;
+}
+/**
+ * Red
+ */
+.red, 
+.red:visited {
+	color: #ff2b25;
+}
+.red:hover {
+	color: #ff5539;
+}
+/** 
+ * Magenta
+ */
+.magenta, 
+.magenta:visited {
+	color: #a9014b;
+}
+.magenta:hover {
+	color: #d72473;
+}
+/**
+ * Orange
+ */
+.orange, 
+.orange:visited {
+	color: #ff5c00;
+}
+.orange:hover {
+	color: #ff813a;
+}
+/** 
+ * Yellow
+ */
+.yellow,
+.yellow:visited {
+	color: #ffb515;
+}
+.yellow:hover {
+	color: #ffc955;
+}

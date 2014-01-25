@@ -1,0 +1,970 @@
+<!doctype html>
+
+<!--[if lt IE 7]> 
+	<html class="nojs ms lt_ie7" lang="en"> 
+<![endif]-->
+
+<!--[if IE 7]>    
+	<html class="nojs ms ie7" lang="en"> 
+<![endif]-->
+
+<!--[if IE 8]>    
+	<html class="nojs ms ie8" lang="en"> 
+<![endif]-->
+
+<!--[if gt IE 8]> 
+	<html class="nojs ms" lang="en"> 
+<![endif]-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="MacCypher">
+	<meta name="description" content="eCSS - A reduced HTML5, CSS3 framework">
+	<meta name="keywords" content="eCSS, reduced, css, framework, jquery, bootstrap, iKreativ, twitter, boilerplate, jquery, html5, ikreativ">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	
+	<!-- Mobile Viewport -->
+	<meta name="viewport" content="width=device-width">
+
+	<title>eCSS - A reduced HTML5, CSS3 framework</title>
+	<!-- IMPORTANT: The "Uniform" CSS have to be loaded before jQuery will be loaded -->
+	<link href="assets/css/uniform.default.css" rel="stylesheet">
+
+	<script src="assets/js/jquery-2.0.2.min.js"></script>
+	<script src="assets/js/jquery.uniform.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+	<!--
+		Minify and combine all CSS files
+		if you use webspace with php support
+	-->
+	<!-- <link href="assets/css/minified.css.php" rel="stylesheet"> -->
+	
+	<!-- Basic CSS integration, if you don't can od want use php minification above -->
+	<link href="assets/css/typo.css" rel="stylesheet">
+	<link href="assets/css/forms.css" rel="stylesheet">
+	<link href="assets/css/tables.css" rel="stylesheet">
+	<link href="assets/css/helpers.css" rel="stylesheet">
+	<link href="assets/css/scaffold.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<link href="assets/css/plugins.css" rel="stylesheet">
+	<link href="assets/css/buttons.css" rel="stylesheet">
+
+	<!-- Custom CSS integration goes heer: -->
+	<link href="assets/css/app.css" rel="stylesheet">
+	
+	<!-- JavaScript to the bottom, except modernizr -->
+	<script type="text/javascript" src="assets/js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+	<div id="top-bar">
+		<div id="logo">
+			<a class="home-link" href="index.html"></a>
+			<span class="logo-text">es:CSS <span class="sign">{}</span></span>
+			<small>essential CSS framework</small>
+		</div>
+		<nav id="primary">
+			<ul>
+				<li><a class="t-blue active" href="index.html">Home</a></li>
+				<li><a class="t-green" href="scaffold.html">Scaffold</a></li>
+				<li><a class="t-yellow" href="forms.html">Forms</a></li>
+				<li><a class="t-purple" href="tables.html">Tables</a></li>
+				<li><a class="t-aqua" href="typography.html">Typo</a></li>
+				<li><a class="t-orange" href="icons.html">Icons</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header>
+		<p class="big-text"><strong>es:CSS</strong> is a lightweight and simplified HTML5, CSS3 framework that wants to help you getting your projects done and helps prevent basic or repetitive tasks.</p>
+	</header>
+	<section class="base">
+		<div class="one-full">
+			<h2>1 - "one-full"</h2>
+			<p>Scaffolding is a simple base grid system with semantic class names which makes remembering them much easier! There is also a non-semantic last class to add to the last div in a row. This class simply removes the right margin.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-full</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<hr>
+
+		<div class="one-half">
+			<h2>1/2 - "one-half"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-half</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="one-half last">
+			<h2>1/2 - "one-half"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-half</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<hr>
+
+		<div class="one-third">
+			<h2>1/3 - "one-third"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-third</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="one-third">
+			<h2>1/3 - "one-third"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-third</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="one-third last">
+			<h2>1/3 - "one-third"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-third</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<hr>
+
+		<div class="one-third">
+			<h2>1/3 - "one-third"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-third</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="two-third last">
+			<h2>2/3 - "two-third"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">two-third</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<hr>
+
+		<div class="one-quarter">
+			<h2>1/4 - "one-quarter"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-quarter</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="one-quarter">
+			<h2>1/4 - "one-quarter"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-quarter</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="one-quarter">
+			<h2>1/4 - "one-quarter"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-quarter</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<div class="one-quarter last">
+			<h2>1/4 - "one-quarter"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-quarter</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
+		</div>
+
+		<hr>
+
+		<form name="temp">
+			<div class="one-quarter">
+				<h2>Text Inputs</h2>
+				<p>In addition to the default styling, you can also use helper classes to determine the width of the input.</p>
+				<p>You also have the option to add notices, labels and help text to each input via classes.</p>
+			</div>
+
+			<div class="one-quarter">
+				<h2>&nbsp;</h2>
+				<input class="onehundred" type="text" placeholder="default input, size 100">
+				<input class="onehundred" type="text" placeholder="default input with help, size 100">
+				<label class="help-text">This is a little help text.</label>
+			</div>
+
+			<div class="one-quarter">
+				<h2>&nbsp;</h2>
+				<input class="onehundred blue" type="text" placeholder="blue input, size 100">
+				<input class="onehundred yellow" type="text" placeholder="yellow input, size 100">
+				<input class="onehundred red" type="text" placeholder="red input, size 100">
+				<input class="onehundred green" type="text" placeholder="green input, size 100">
+			</div>
+
+			<div class="one-quarter last">
+				<h2>&nbsp;</h2>
+				<input class="onehundred blue" type="text" placeholder="blue input with label, size 100">
+				<label class="help-text label-blue">Just to let you know...this is cool!</label><br>
+
+				<input class="onehundred yellow" type="text" placeholder="yellow input with label, size 100">
+				<label class="help-text label-yellow">Whoa there!</label><br>
+
+				<input class="onehundred red" type="text" placeholder="red input with label, size 100">
+				<label class="help-text label-red">Ohh noes! That's not good.</label><br>
+
+				<input class="onehundred green" type="text" placeholder="green input with label, size 100">
+				<label class="help-text label-green">Woohoo! That's great!</label><br>
+			</div>
+
+			<hr>
+
+			<!-- elements -->
+			<div class="one-quarter">
+				<h2>Elements</h2>
+				<p>All form elements like checkboxes, radios and selects are automatically styled just by adding the CSS file and the JavaScript.</p>
+			</div>
+
+			<!-- checkboxes -->
+			<div class="one-quarter">
+				<h2>Checkboxes</h2>
+				<input type="checkbox" id="ch-first" value="" checked><label for="ch-first">Checked</label><br>
+				<input type="checkbox" id="ch-second" value=""><label for="ch-second">Not checked</label><br>
+				<input type="checkbox" id="ch-third" value="" disabled><label for="ch-third">Disabled</label><br>
+				<input type="checkbox" id="ch-fourth" value="" disabled checked><label for="ch-fourth">Disabled Checked</label>
+			</div>
+
+			<!-- radios -->
+			<div class="one-quarter">
+				<h2>Radios</h2>
+				<input type="radio" value="" id="r-first" name="myradio" checked><label for="r-first">Checked</label><br>
+				<input type="radio" value="" id="r-second" name="myradio"><label for="r-second">Not checked</label><br>
+				<input type="radio" value="" id="r-third" name="myradio2" disabled><label for="r-third">Disabled</label><br>
+				<input type="radio" value="" id="r-fourth" name="myradio2" disabled checked><label for="r-fourth">Disabled Checked</label>
+			</div>
+
+			<!-- select -->
+			<div class="one-quarter last">
+				<h2>Select</h2>
+				<label for="standard-dropdown">Standard Dropdown</label><br/>
+				<select id="standard-dropdown" class="fixedWidth">
+					<option>Select one of the following items ...</option>
+					<option>A great option</option>
+					<option>Another great option</option>
+					<option>This option is better</option>
+					<option>But this option is best</option>
+				</select>
+
+				<label for="standard-dropdown">Standard Dropdown</label><br/>
+				<select id="standard-dropdown" class="fixedWidth" disabled>
+					<option>Disabled</option>
+				</select>
+			</div>
+
+			<p>&nbsp;</p>
+
+			<div class="one-half">
+				<label>Cheeky little file input</label><br>
+				<input type="file" name="fileUpload" maxlength="100000" accept="image" />
+			</div>
+
+			<div class="one-half last">
+			</div>
+
+			<hr>
+
+			<div class="one-full">
+				<h2>Textarea</h2>
+			</div>
+			<div class="one-third">
+				<p>We can add to the default styling of textareas using the same helper class that we used on the input boxes.</p>
+				<p>Add any relevant classes for sizing or notices and bam! You're done.</p>
+			</div>
+
+			<div class="two-third last">
+				<textarea class="onehundred" rows="5" placeholder="A default textarea..."></textarea><br>
+				<textarea class="onehundred warning" rows="5" placeholder="A textarea with a warning..."></textarea><br>
+				<input class="btn green" type="submit" value="Save changes" />
+				<input class="btn red" type="reset" value="Cancel" />
+			</div>
+		</form>
+
+		<hr>
+<!-- Buttons goes here -->
+		<div class="one-half">
+			<h2>Standard buttons</h2>
+			<table class="ns">
+                <thead>
+                    <tr>
+                        <th>Button</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn">Default</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn</span>&quot;&gt; Default&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn red">Red</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn red</span>&quot;&gt; Red&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn orange">Orange</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn orange</span>&quot;&gt; Orange&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn blue">Blue</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn blue</span>&quot;&gt; Blue&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn aqua">Aqua</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn aqua</span>&quot;&gt; Aqua&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn ice">Ice</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn ice</span>&quot;&gt; Ice&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn green">Green</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn green</span>&quot;&gt; Green&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn purple">Purple</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn purple</span>&quot;&gt; Purple&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn pink">Pink</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn pink</span>&quot;&gt; Pink&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn magenta">Magenta</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn magenta</span>&quot;&gt; Magenta&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn yellow">Yellow</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn yellow</span>&quot;&gt; Yellow&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="one-half last">
+			<h2>Flat buttons</h2>
+			<table class="ns">
+                <thead>
+                    <tr>
+                        <th>Button</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn flat">Default</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn flat</span>&quot;&gt; Default&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn red flat">Red</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn red flat</span>&quot;&gt; Red&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn orange flat">Orange</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn orange flat</span>&quot;&gt; Orange&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn blue flat">Blue</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn blue flat</span>&quot;&gt; Blue&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn aqua flat">Aqua</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn aqua flat</span>&quot;&gt; Aqua&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn ice flat">Ice</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn ice flat</span>&quot;&gt; Ice&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn green flat">Green</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn green flat</span>&quot;&gt; Green&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn purple flat">Purple</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn purple flat</span>&quot;&gt; Purple&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn pink flat">Pink</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn pink flat</span>&quot;&gt; Pink&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn magenta flat">Magenta</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn magenta flat</span>&quot;&gt; Magenta&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn yellow flat">Yellow</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn yellow flat</span>&quot;&gt; Yellow&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="one-full">
+			<h2>Button Variants</h2>
+
+			<table class="ns">
+                <thead>
+                    <tr>
+                        <th>Button</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn small red">Small</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn small red</span>&quot;&gt; Small&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn medium green">Medium</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn medium green</span>&quot;&gt; Medium&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn">Default</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn</span>&quot;&gt; Default&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn large ice">Large</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn large ice</span>&quot;&gt; Large&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn rounded yellow">Rounded</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn rounded yellow</span>&quot;&gt; Rounded&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn circle pink xxl-icons flat"><i class="icon-heart"></i></a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn circle pink xxl-icons flat</span>&quot;&gt; &lt;<span class="tag">i</span> <span class="cls">class</span>=&quot;<span class="prm">icon-heart</span>&quot;&gt;&lt;/<span class="tag">i</span>&gt; &lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="one-full">
+			<h2>Button Variants</h2>
+
+			<table class="ns">
+                <thead>
+                    <tr>
+                        <th>Button</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn small red">Small</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn small red</span>&quot;&gt; Small&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn medium green">Medium</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn medium green</span>&quot;&gt; Medium&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn">Default</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn</span>&quot;&gt; Default&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn large blue">Large</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn large blue</span>&quot;&gt; Large&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn rounded pink">Rounded</a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn rounded pink</span>&quot;&gt; Rounded&lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="btn circle pink xxl-icons flat"><i class="icon-heart"></i></a>
+                        </td>
+                        <td>
+                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn circle pink xxl-icons flat</span>&quot;&gt; &lt;<span class="tag">i</span> <span class="cls">class</span>=&quot;<span class="prm">icon-heart</span>&quot;&gt;&lt;/<span class="tag">i</span>&gt; &lt;/<span class="tag">a</span>&gt;</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="one-full aligncenter">
+	        <h3><span class="rounded magenta">Note:</span> Don't forget, you can mix and match the buttons. Large pink rounded, small blue flat, medium green flat rounded ... the choice is yours!</h3>
+		</div>
+
+		<hr>
+
+		<div class="one-third">
+			<h2>Tables</h2>
+			<p>The default table CSS does everything for you.</p>
+			<p>Simply reference the tables CSS file and you're good to go! Want more? You can add the .table-striped class to alternate each rows background color!</p>
+			<p>Don't like the table bordered?</p>
+			<p>No worries, use the helper class .nb</p>
+		</div>
+		
+		<div class="two-third last">
+			<h2>Border + Striped</h2>
+			<table class="table-striped">
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							<code>&lt;table&gt;</code>
+						</td>
+						<td>
+							Wrapping element for displaying data in a tabular format
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;thead&gt;</code>
+						</td>
+						<td>
+							Container element for table header rows <code>&lt;tr&gt;</code> to label table columns
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;tbody&gt;</code>
+						</td>
+						<td>
+							Container element for table rows <code>&lt;tr&gt;</code> in the body of the table
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;tr&gt;</code>
+						</td>
+						<td>
+							Container element for a set of table cells <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> that appears on a single row
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;td&gt;</code>
+						</td>
+						<td>
+							Default table cell
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;th&gt;</code>
+						</td>
+						<td>
+							Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <code>&lt;thead&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;caption&gt;</code>
+						</td>
+						<td>
+							Description or summary of what the table holds, especially useful for screen readers
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<hr>
+<!-- No Border + Striped -->
+		<div class="one-third">
+			<p></p>
+		</div>
+
+		<div class="two-third last">
+			<h2>No Border + Striped</h2>
+			<table class="table-striped nb">
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							<code>&lt;table&gt;</code>
+						</td>
+						<td>
+							Wrapping element for displaying data in a tabular format
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;thead&gt;</code>
+						</td>
+						<td>
+							Container element for table header rows <code>&lt;tr&gt;</code> to label table columns
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;tbody&gt;</code>
+						</td>
+						<td>
+							Container element for table rows <code>&lt;tr&gt;</code> in the body of the table
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;tr&gt;</code>
+						</td>
+						<td>
+							Container element for a set of table cells <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> that appears on a single row
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;td&gt;</code>
+						</td>
+						<td>
+							Default table cell
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;th&gt;</code>
+						</td>
+						<td>
+							Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <code>&lt;thead&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;caption&gt;</code>
+						</td>
+						<td>
+							Description or summary of what the table holds, especially useful for screen readers
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<hr>
+<!-- No Border, No Stripe -->
+		<div class="one-third">
+			<p></p>
+		</div>
+
+		<div class="two-third last">
+			<h2>No Border, No Stripe</h2>
+			<table class="ns nb">
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							<code>&lt;table&gt;</code>
+						</td>
+						<td>
+							Wrapping element for displaying data in a tabular format
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;thead&gt;</code>
+						</td>
+						<td>
+							Container element for table header rows <code>&lt;tr&gt;</code> to label table columns
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;tbody&gt;</code>
+						</td>
+						<td>
+							Container element for table rows <code>&lt;tr&gt;</code> in the body of the table
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;tr&gt;</code>
+						</td>
+						<td>
+							Container element for a set of table cells <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> that appears on a single row
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;td&gt;</code>
+						</td>
+						<td>
+							Default table cell
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;th&gt;</code>
+						</td>
+						<td>
+							Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <code>&lt;thead&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>&lt;caption&gt;</code>
+						</td>
+						<td>
+							Description or summary of what the table holds, especially useful for screen readers
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<hr>
+
+		<div class="one-third">
+			<h1>Heading h1</h1>
+			<h2>Heading h2</h2>
+			<h3>Heading h3</h3>
+			<h4>Heading h4</h4>
+			<h5>Heading h5</h5>
+			<h6>Heading h6</h6>
+		</div>
+
+		<div class="two-third last">
+			<h1>Paragraphs</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p> 
+			<p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.</p>
+			<p>Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+		</div>
+
+		<hr>
+
+		<div class="one-quarter">
+			<h2>Standard <code>&lt;ul&gt;</code></h2>
+			<ul>
+				<li>A simple list item.</li>
+				<li>Another list item.</li>
+				<li>Don't forget this list item.</li>
+				<li>This is my favourite list item.</li>
+			</ul>
+<pre>
+&lt;<span class="tag">ul</span>&gt;
+  &lt;<span class="tag">li</span>&gt;Unordered list&lt;/<span class="tag">li</span>&gt;
+&lt;/<span class="tag">ul</span>&gt;
+</pre>
+		</div>
+
+		<div class="one-quarter">
+			<h2>No style <code>&lt;ul&gt;</code></h2>
+			<ul class="nolist">
+				<li>A simple list item.</li>
+				<li>Another list item.</li>
+				<li>Don't forget this list item.</li>
+				<li>This is my favourite list item.</li>
+			</ul>
+<pre>
+&lt;<span class="tag">ul</span> <span class="cls">class</span>=&quot;<span class="prm">nolist</span>&quot;&gt;
+  &lt;<span class="tag">li</span>&gt;Unordered list&lt;/<span class="tag">li</span>&gt;
+&lt;/<span class="tag">ul</span>&gt;
+</pre>
+		</div>
+
+		<div class="one-quarter">
+			<h2>Standard <code>&lt;ol&gt;</code></h2>
+			<ol>
+				<li>A simple list item.</li>
+				<li>Another list item.</li>
+				<li>Don't forget this list item.</li>
+				<li>This is my favourite list item.</li>
+			</ol>
+<pre>
+&lt;<span class="tag">ol</span>&gt;
+  &lt;<span class="tag">li</span>&gt;Ordered list&lt;/<span class="tag">li</span>&gt;
+&lt;/<span class="tag">ol</span>&gt;
+</pre>
+		</div>
+
+		<div class="one-quarter last">
+			<h2>Roman <code>&lt;ol&gt;</code></h2>
+			<ol class="roman">
+				<li>A simple list item.</li>
+				<li>Another list item.</li>
+				<li>Don't forget this list item.</li>
+				<li>This is my favourite list item.</li>
+			</ol>
+<pre>
+&lt;<span class="tag">ol</span> <span class="cls">class</span>=&quot;<span class="prm">roman</span>&quot;&gt;
+  &lt;<span class="tag">li</span>&gt;Ordered list&lt;/<span class="tag">li</span>&gt;
+&lt;/<span class="tag">ol</span>&gt;
+</pre>
+		</div>
+
+		<hr>
+
+		<div class="one-full">
+			<h2>Blockquote</h2>
+			<blockquote class="aligncenter">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.
+			</blockquote>
+		</div>
+
+		<hr>
+
+		<div class="one-full">
+			<h2>Misc</h2>
+			<p>
+				This <span class="highlight">highlights</span> other typographic elements that can be used within a site. Or see this <span class="muted">muted text</span> declaration for less important / outdated / deactivated text. And even basic text decorations like <span class="underline">underline</span> or <span class="strikethrough">strikethrough</span> and font styles like <span class="italic">italic</span>, <span class="strong">strong</span> or even <span class="stronger">stronger</span>.<br>
+				These include things like: <code>&lt;sup&gt;</code> <sup>sup?</sup>, <code>&lt;sub&gt;</code> <sub>sub</sub>.
+			</p>
+
+			<p>There are also many other items such as <code>&lt;code&gt;</code> and</p>
+<pre>
+  Automatically formatted &lt;pre&gt; tags and some pre-defined classes for code / tag highlighting:
+  &lt;<span class="tag">tag</span> <span class="cls">parameter</span>=&quot;<span class="prm">value</span>&quot;&gt;Default&lt;/<span class="tag">tag</span>&gt;
+</pre>
+		</div>
+
+		<hr>
+
+		<!-- footer -->
+		<footer class="one-full">
+			<p class="small">A project by <a href="http://willdesignforfood.de">Mac Cypher</a>. Originally based off <a href="http://ikreativ.com">iKreativ</a>. Released under the <a href="http://philsturgeon.co.uk/code/dbad-license/">DBAD License</a>.</p>
+		</footer>
+
+	</section>
+</body>
+</html>

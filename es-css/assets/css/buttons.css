@@ -84,7 +84,7 @@ input[type="reset"]:hover.btn {
 	top: 2px;
 	background-color: #767c85;
 	color: #fff;
-	border-color: rgba(255,255,255,0);
+	border-color: rgba(255,255,255,0) !important;
 
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;

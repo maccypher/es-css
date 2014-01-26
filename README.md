@@ -19,6 +19,8 @@ This software is licensed under the
 * ~~figure out the essentially needed files~~
 * ~~create a simple design with extrem usability~~
 * WIP: keep basic files as generic as possible
+* add tooltip feature
+* research notification feature
 
 #### Release v0.1
 

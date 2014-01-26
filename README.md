@@ -3,6 +3,10 @@
 
 This framework is inspired by iKreativ - Workless. I don't wanna present just another clone/fork of "Workless". That's why I built it from scratch, took some of the concepts from iKreativ, adopted some of the techniques and spiced it up with some own knowledge.
 
+To see the implemented features in a life demo, head over to the project page:
+
+<http://willdesignforfood.de/es-css/>
+
 
 ## License
 

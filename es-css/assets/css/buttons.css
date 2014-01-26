@@ -168,50 +168,51 @@ input[type="reset"]:hover.btn {
 .blue,
 .blue:visited {
 	background-color: #1945cb;
-	color: white;
 }
 .blue:hover {
 	background-color: #315ee6;
+}
+.btn.blue {
 	color: white;
 }
-
 /**
- * Blue
+ * Ice
  */
 .ice,
 .ice:visited {
 	background-color: #c6f3ff;
-	color: #333 !important;
 }
 .ice:hover {
 	background-color: #c6f3ff;
 	background-color: #e8f5ff;
+}
+.btn.ice {
 	color: #333 !important;
 }
-
 /**
  * Purple
  */
 .purple,
 .purple:visited {
 	background-color: #8453dc;
-	color: white;
 }
 .purple:hover {
 	background-color: #996beb;
+}
+.btn.purple {
 	color: white;
 }
-
 /**
  * Pink
  */
 .pink,
 .pink:visited {
 	background-color: #fe57a1;
-	color: white;
 }
 .pink:hover {
 	background-color: #fe7eb6;
+}
+.btn.pink {
 	color: white;
 }
 /**
@@ -220,10 +221,11 @@ input[type="reset"]:hover.btn {
 .green,
 .green:visited {
 	background-color: #91bd09;
-	color: white;
 }
 .green:hover {
 	background-color: #aad427;
+}
+.btn.green {
 	color: white;
 }
 /** 
@@ -232,10 +234,11 @@ input[type="reset"]:hover.btn {
 .aqua,
 .aqua:visited {
 	background-color: #2daebf;
-	color: white;
 }
 .aqua:hover {
 	background-color: #46c7d8;
+}
+.btn.aqua {
 	color: white;
 }
 /**
@@ -244,10 +247,11 @@ input[type="reset"]:hover.btn {
 .red,
 .red:visited {
 	background-color: #ff2b25;
-	color: white;
 }
 .red:hover {
 	background-color: #ff5539;
+}
+.btn.red {
 	color: white;
 }
 /** 
@@ -256,10 +260,11 @@ input[type="reset"]:hover.btn {
 .magenta,
 .magenta:visited {
 	background-color: #a9014b;
-	color: white;
 }
 .magenta:hover {
 	background-color: #d72473;
+}
+.btn.magenta {
 	color: white;
 }
 /**
@@ -268,10 +273,11 @@ input[type="reset"]:hover.btn {
 .orange,
 .orange:visited {
 	background-color: #ff5c00;
-	color: white;
 }
 .orange:hover {
 	background-color: #ff813a;
+}
+.btn.orange {
 	color: white;
 }
 /** 
@@ -280,12 +286,17 @@ input[type="reset"]:hover.btn {
 .yellow,
 .yellow:visited {
 	background-color: #ffb515;
-	color: black;
 }
 .yellow:hover {
 	background-color: #ffc955;
-	color: black;
 }
+.btn.yellow {
+	color: #333 !important;
+}
+
+/**
+* Flat
+*/
 .flat {
 	color: #fff;
 }

@@ -14,17 +14,14 @@
 
 		/* css files for compression */
 		include('typo.css');
-	#	include('font.css');
 		include('forms.css');
 		include('tables.css');
-	#	include('buttons.css');
-	#	include('alerts.css');
-		include('flat/red.css');
 		include('helpers.css');
 		include('scaffold.css');
 		include('icons.css');
-		include('plugins.css');
-		include('app.css'); /* last in list to do some overrides maybe */
+		include('buttons.css');
+
+		# include('[your_custom_css].css'); /* last in list to do some overrides maybe */
 
 	ob_end_flush();
 ?>

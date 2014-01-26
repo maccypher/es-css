@@ -60,7 +60,7 @@ Instead of using:
 	<link href="assets/css/buttons.css" rel="stylesheet">
 	...
 	
-you can keep it short in just on line in your HTML:
+you can keep it short in just one line in your HTML:
 
 	...
 	<link href="assets/css/minified.css.php" rel="stylesheet">

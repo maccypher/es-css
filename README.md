@@ -25,6 +25,7 @@ This software is licensed under the
 * WIP: keep basic files as generic as possible
 * add tooltip feature
 * research notification feature
+* refactor button-background / -color combinations (make them more unique)
 
 #### Release v0.1
 
@@ -46,7 +47,7 @@ This software is licensed under the
 
 Contains all basic CSS files. Put your custom / app specific CSS files in here. The folder contains a php file: "**[minified.css.php](es-css/assets/css/minified.css.php)**". If you host your project on php supported webspace, you can use this php file to minify all you CSS.
 
-Instead of of using:
+Instead of using:
 
 	...
 	<link href="assets/css/typo.css" rel="stylesheet">

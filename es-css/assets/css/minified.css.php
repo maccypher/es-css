@@ -21,7 +21,8 @@
 		include('icons.css');
 		include('buttons.css');
 
-		# include('[your_custom_css].css'); /* last in list to do some overrides maybe */
+		# include('[your_custom_css].css'); /* like the following line: */
+		include('app.css'); /* last in list to do some overrides maybe */
 
 	ob_end_flush();
 ?>

@@ -38,7 +38,7 @@ h2 {
 	font-size: 2em;
 }
 h3 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 nav ul {
 	list-style-type: none;
@@ -80,7 +80,7 @@ ol {}
 	color: #1945cb;
 }
 .blue:hover {
-	color: #315ee6;
+	/*color: #315ee6;*/
 }
 
 /**
@@ -91,7 +91,7 @@ ol {}
 	color: #8453dc;
 }
 .purple:hover {
-	color: #996beb;
+	/*color: #996beb;*/
 }
 
 /**
@@ -102,7 +102,7 @@ ol {}
 	color: #fe57a1;
 }
 .pink:hover {
-	color: #fe7eb6;
+	/*color: #fe7eb6;*/
 }
 /**
  * Green
@@ -112,7 +112,7 @@ ol {}
 	color: #91bd09;
 }
 .green:hover {
-	color: #aad427;
+	/*color: #aad427;*/
 }
 /** 
  * Aqua
@@ -122,7 +122,7 @@ ol {}
 	color: #2daebf;
 }
 .aqua:hover {
-	color: #46c7d8;
+	/*color: #46c7d8;*/
 }
 /**
  * Red
@@ -132,7 +132,7 @@ ol {}
 	color: #ff2b25;
 }
 .red:hover {
-	color: #ff5539;
+	/*color: #ff5539;*/
 }
 /** 
  * Magenta
@@ -142,7 +142,7 @@ ol {}
 	color: #a9014b;
 }
 .magenta:hover {
-	color: #d72473;
+	/*color: #d72473;*/
 }
 /**
  * Orange
@@ -152,7 +152,7 @@ ol {}
 	color: #ff5c00;
 }
 .orange:hover {
-	color: #ff813a;
+	/*color: #ff813a;*/
 }
 /** 
  * Yellow
@@ -162,5 +162,5 @@ ol {}
 	color: #ffb515;
 }
 .yellow:hover {
-	color: #ffc955;
+	/*color: #ffc955;*/
 }

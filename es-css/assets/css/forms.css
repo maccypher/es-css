@@ -11,7 +11,7 @@ textarea {
 	padding: 5px 0;
 	text-indent: 5px;
 	background: #f6f6f6;
-	color: #999;
+	color: #444;
 	border: 1px solid #ddd;
 	border-collapse: collapse;
 	
@@ -29,71 +29,41 @@ textarea {
 	font-weight: 400;
 }
 
-.label-blue {
+.label-info {
 	color: #1945cb;
 }
-.label-lightblue {
-	color: #4aa9fe;
-}
-.label-ice {
-	color: #c6f3ff;
-}
-.label-purple {
-	color: #8453dc;
-}
-.label-pink { 
-	color: #fe57a1;
-}
-.label-aqua { 
-	color: #2daebf;
-}
-.label-darkorange {
-	color: #f0be12;
-}
-.label-orange { 
-	color: #ff5c00;
-}
-.label-darkred {
-	color: #df4a08;
-}
-.label-red {
-	color: #ff2b25;
-}
-.label-magenta { 
-	color: #a9014b;
-}
-.label-green { 
-	color: #91bd09;
-}
-.label-lightgreen {
-	color: #b2de29;
-}
-.label-yellow { 
+.label-warn { 
 	color: #ffb515;
 }
+.label-danger {
+	color: #ff2b25;
+}
+.label-success { 
+	color: #91bd09;
+}
 
-input.blue {
+input.info {
 	-webkit-box-shadow: inset 0 0 2px #ccc, 0 0 1px #4aa9fe;
 	-moz-box-shadow: inset 0 0 2px #ccc, 0 0 1px #4aa9fe;
 	-o-box-shadow: inset 0 0 2px #ccc, 0 0 1px #4aa9fe;
 	box-shadow: inset 0 0 2px #ccc, 0 0 1px #4aa9fe;
 	border: 1px solid #4aa9fe;
 }
-input.yellow {
+input.warn {
 	-webkit-box-shadow: inset 0 0 2px #ccc, 0 0 1px #f0be12;
 	-moz-box-shadow: inset 0 0 2px #ccc, 0 0 1px #f0be12;
 	-o-box-shadow: inset 0 0 2px #ccc, 0 0 1px #f0be12;
 	box-shadow: inset 0 0 2px #ccc, 0 0 1px #f0be12;
 	border: 1px solid #f0be12;
 }
-input.red {
+input.danger {
 	-webkit-box-shadow: inset 0 0 2px #ccc, 0 0 1px #df4a08;
 	-moz-box-shadow: inset 0 0 2px #ccc, 0 0 1px #df4a08;
 	-o-box-shadow: inset 0 0 2px #ccc, 0 0 1px #df4a08;
 	box-shadow: inset 0 0 2px #ccc, 0 0 1px #df4a08;
 	border: 1px solid #df4a08;
 }
-input.green {
+input.success {
 	-webkit-box-shadow: inset 0 0 2px #ccc, 0 0 1px #b2de29;
 	-moz-box-shadow: inset 0 0 2px #ccc, 0 0 1px #b2de29;
 	-o-box-shadow: inset 0 0 2px #ccc, 0 0 1px #b2de29;

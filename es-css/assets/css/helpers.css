@@ -7,10 +7,6 @@ pre {
 	margin-bottom: 15px;
 	padding: 5px 10px;
 	border: 1px solid #d8d9de;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
 	border-radius: 5px;
 }
 pre,
@@ -40,10 +36,6 @@ code {
 	font-family: 'Monaco',monospace;
 	font-size: 14px;
 	color: #4aa9fe;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
 	border-radius: 5px;
 }
 
@@ -74,44 +66,35 @@ blockquote {
 	background-color: #f3f4f6;
 	width: 90%;
 	border: 2px solid #e9eaef;
-	
-	-webkit-box-shadow: 3px 3px 0 #e9eaef;
-	-moz-box-shadow: 3px 3px 0 #e9eaef;
-	-o-box-shadow: 3px 3px 0 #e9eaef;
 	box-shadow: 3px 3px 0 #e9eaef;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
 	border-radius: 5px;
 }
 
 .notification {
-	font-size: 11px;
-  	font-weight: bold;
+	font-size: 14px;
+  	font-weight: 400;
   	text-align: center;
   	line-height: 14px;
   	color: #ffffff;
   	white-space: nowrap;
   	vertical-align: baseline;
   	background-color: #999999;
-  	padding: 3px 7px 2px 7px;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
-
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -o-border-radius: 25px;
+  	padding: 2px 7px 2px 7px;
+	/*border-bottom: 2px solid rgba(0,0,0,0.2);*/
     border-radius: 25px;
+    box-shadow: 0 2px 0 #666;
 
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-    -o-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-
-	-webkit-text-shadow: 0 -1px 1px rgba(0,0,0,0.3);
-	-moz-text-shadow: 0 -1px 1px rgba(0,0,0,0.3);
-	-o-text-shadow: 0 -1px 1px rgba(0,0,0,0.3);
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.3);
+	/*text-shadow: 0 -1px 1px rgba(0,0,0,0.2);*/
+}
+.notification.flat.large {
+  	line-height: 28px;
+  	padding: 2px 10px 4px 10px;
+}
+.notification.large {
+	font-size: 24px;
+  	line-height: 28px;
+  	padding: 2px 10px 3px 10px;
+	border-radius: 50px;
 }
 .label.red,
 .notification.red {
@@ -121,13 +104,26 @@ blockquote {
 .notification.orange {
   	background-color: #ff5c00;
 }
+.label.ice,
+.notification.ice {
+ 	 background-color: #c6f3ff;
+ 	 color: #333 !important;
+}
+.label.aqua,
+.notification.aqua {
+  	background-color: #2daebf;
+}
+.label.purple,
+.notification.purple {
+  	background-color: #8453dc;
+}
 .label.green,
 .notification.green {
   	background-color: #91bd09;
 }
 .label.blue,
 .notification.blue {
-  	background-color: #2daebf;
+  	background-color: #1945cb;
 }
 .label.pink,
 .notification.pink {
@@ -145,6 +141,10 @@ blockquote {
 .notification.flat {
 	border-bottom: none;
 	box-shadow: none;
+}
+.notification.flat {
+	line-height: 10px;
+  	padding: 2px 7px 3px 7px;
 }
 /**
  * Text decorations
@@ -168,14 +168,7 @@ blockquote {
  * Box shadows 
  */
 .box_shadow {
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-	-o-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
 	border-radius: 3px;
 }
 /**
@@ -183,8 +176,8 @@ blockquote {
  */
  .highlight {
  	background: #fcfbe6;
- 	padding-left: 5px;
- 	padding-right: 5px;
+ 	padding-left: 2px;
+ 	padding-right: 2px;
  }
 /** 
  * Cancel list styles
@@ -213,7 +206,7 @@ blockquote {
  * Cancel borders
  */
 .nb {
-	border: none;
+	border: none !important;
 }
 .ntb {
 	border: none;
@@ -297,55 +290,6 @@ blockquote {
 	display: none !important;
 	visibility: hidden;
 }
-/** 
- * Hide only visually,but have it available 
- * for screenreaders. 
- */
-.visuallyhidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-/**
- * Extends the .visuallyhidden class to allow 
- * the element to be focusable when navigated 
- * to via the keyboard. 
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-	clip: auto;
-	height: auto;
-	margin: 0;
-	overflow: visible;
-	position: static;
-	width: auto;
-}
-/** 
- * Hide visually and from screenreaders,but 
- * maintain layout 
- */
-.invisible {
-	visibility: hidden;
-}
-/** 
- * Floats
- */ 
-.clearfix:before,
-.clearfix:after {
-	content: "";
-	display: table;
-}
-.clearfix:after {
-	clear: both;
-}
-.clearfix {
-	zoom: 1;
-}
 /**
  * Misc
  */
@@ -389,19 +333,208 @@ blockquote {
 .pln {
 	color: #4F6677;
 }
-pre.prettyprint {
-  	background: #fefefe;
-  	padding: 9px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-  	border: 1px solid rgba(0,0,0,0.2);
-	font-size: 14px;
-}
-.linenums {
-	margin: 0;
-	padding: 0;
-}
-.linenums li {
-	line-height: 20px;
-}
 /* @end Prettyprint */
+
+/**
+* Tooltip
+*/
+/* ------------------------------- */
+*.tooltip {
+	position: relative;
+	cursor: pointer;
+	display: inline;
+	color: #999;
+	line-height: 1em;
+	border-bottom: 1px dotted #ff5c00;
+}
+
+*.tooltip + i,
+*.tooltip > i {
+	position: absolute;
+	text-align: center;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 150%;
+	color: #eee;
+	background: #333;
+	background-clip: padding-box;
+	border: 5px solid #333;
+	left: -20px;
+	white-space: nowrap;
+	margin-bottom: 15px;
+	margin-left: 0;
+	bottom: 100%;
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	border-radius: 3px;
+
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+*.tooltip + i:before,
+*.tooltip + i:after,
+*.tooltip > i:before,
+*.tooltip > i:after {
+	content: "";
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	top: 100%;
+	left: 30px;
+}
+
+*.tooltip + i:before,
+*.tooltip > i:before {
+	border-top: 10px solid #333;
+	margin-top: 5px;
+}
+
+*.tooltip + i:after,
+*.tooltip > i:after {
+	border-top: 10px solid #333;
+	margin-top: -2px;
+	z-index: 1;
+}
+
+*.tooltip:hover + i,
+*.tooltip:hover > i {
+	visibility: visible;
+	opacity: 1;
+}
+
+*.tooltip.red + i:after,
+*.tooltip.red > i:after,
+*.tooltip.red + i:before,
+*.tooltip.red > i:before {
+	border-top-color: #ff2b25;
+	border-bottom-color: #ff2b25;
+}
+*.tooltip.red + i,
+*.tooltip.red > i {
+	 background-color: #ff2b25;
+	 border-color: #ff2b25;
+}
+
+*.tooltip.orange + i:after,
+*.tooltip.orange > i:after,
+*.tooltip.orange + i:before,
+*.tooltip.orange > i:before {
+	border-top-color: #ff5c00;
+	border-bottom-color: #ff5c00;
+}
+*.tooltip.orange + i,
+*.tooltip.orange > i {
+	background-color: #ff5c00;
+	border-color: #ff5c00;
+}
+
+*.tooltip.ice + i:after,
+*.tooltip.ice > i:after,
+*.tooltip.ice + i:before,
+*.tooltip.ice > i:before {
+	border-top-color: #c6f3ff;
+	border-bottom-color: #c6f3ff;
+}
+*.tooltip.ice + i,
+*.tooltip.ice > i {
+	 background-color: #c6f3ff;
+	 border-color: #c6f3ff;
+	 color: #333;
+}
+
+*.tooltip.aqua + i:after,
+*.tooltip.aqua > i:after,
+*.tooltip.aqua + i:before,
+*.tooltip.aqua > i:before {
+	border-top-color: #2daebf;
+	border-bottom-color: #2daebf;
+}
+*.tooltip.aqua + i,
+*.tooltip.aqua > i {
+	background-color: #2daebf;
+	border-color: #2daebf;
+}
+
+*.tooltip.purple + i:after,
+*.tooltip.purple > i:after,
+*.tooltip.purple + i:before,
+*.tooltip.purple > i:before {
+	border-top-color: #8453dc;
+	border-bottom-color: #8453dc;
+}
+*.tooltip.purple + i,
+*.tooltip.purple > i {
+	background-color: #8453dc;
+	border-color: #8453dc;
+}
+
+*.tooltip.green + i:after,
+*.tooltip.green > i:after,
+*.tooltip.green + i:before,
+*.tooltip.green > i:before {
+	border-top-color: #91bd09;
+	border-bottom-color: #91bd09;
+}
+*.tooltip.green + i,
+*.tooltip.green > i {
+	background-color: #91bd09;
+	border-color: #91bd09;
+}
+
+*.tooltip.blue + i:after,
+*.tooltip.blue > i:after,
+*.tooltip.blue + i:before,
+*.tooltip.blue > i:before {
+	border-top-color: #1945cb;
+	border-bottom-color: #1945cb;
+}
+*.tooltip.blue + i,
+*.tooltip.blue > i {
+	background-color: #1945cb;
+	border-color: #1945cb;
+}
+
+*.tooltip.pink + i:after,
+*.tooltip.pink > i:after,
+*.tooltip.pink + i:before,
+*.tooltip.pink > i:before {
+	border-top-color: #fe57a1;
+	border-bottom-color: #fe57a1;
+}
+*.tooltip.pink + i,
+*.tooltip.pink > i {
+	background-color: #fe57a1;
+	border-color: #fe57a1;
+}
+
+*.tooltip.magenta + i:after,
+*.tooltip.magenta > i:after,
+*.tooltip.magenta + i:before,
+*.tooltip.magenta > i:before {
+	border-top-color: #a9014b;
+	border-bottom-color: #a9014b;
+}
+*.tooltip.magenta + i,
+*.tooltip.magenta > i {
+	background-color: #a9014b;
+	border-color: #a9014b;
+}
+
+*.tooltip.yellow + i:after,
+*.tooltip.yellow > i:after,
+*.tooltip.yellow + i:before,
+*.tooltip.yellow > i:before {
+	border-top-color: #ffb515;
+	border-bottom-color: #ffb515;
+}
+*.tooltip.yellow + i,
+*.tooltip.yellow > i {
+	background-color: #ffb515;
+	border-color: #ffb515;
+	color: #333;
+}

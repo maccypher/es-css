@@ -70,10 +70,12 @@
 		</div>
 		<nav id="primary">
 			<ul>
-				<li><a class="t-blue active" href="index.html">Nav Item 1</a></li>
-				<li><a class="t-green" href="index.html">Nav Item 2</a></li>
-				<li><a class="t-yellow" href="index.html">Nav Item 3</a></li>
-				<li><a class="t-purple" href="index.html">Nav Item 4</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#scaffold">Scaffold</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#typo">Typo</a></li>
+				<li><a href="#misc">Misc</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -82,8 +84,9 @@
 	</header>
 	<section class="base">
 		<div class="one-full">
+			<h1><a name="scaffold">Scaffolding</a></h1>
 			<h2>1 - "one-full"</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<p>Scaffolding is a simple base grid system with semantic class names which makes remembering them much easier! There is also a non-semantic last class to add to the last div in a row. This class simply removes the right margin.</p>
 			<pre>&lt;<span class="tag">div</span><span class="cls"> class</span>=&quot;<span class="prm">one-full</span>&quot;&gt;some content to be wrapped ...&lt;/<span class="tag">div</span>&gt;</pre>
 		</div>
 
@@ -163,11 +166,13 @@
 
 		<hr>
 
+
+		<h1><a name="forms">Forms</a></h1>
 		<form name="temp">
 			<div class="one-quarter">
 				<h2>Text Inputs</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+				<p>In addition to the default styling, you can also use helper classes to determine the width of the input.</p>
+				<p>You also have the option to add notices, labels and help text to each input via classes.</p>
 			</div>
 
 			<div class="one-quarter">
@@ -179,25 +184,25 @@
 
 			<div class="one-quarter">
 				<h2>&nbsp;</h2>
-				<input class="onehundred blue" type="text" placeholder="blue input, size 100">
-				<input class="onehundred yellow" type="text" placeholder="yellow input, size 100">
-				<input class="onehundred red" type="text" placeholder="red input, size 100">
-				<input class="onehundred green" type="text" placeholder="green input, size 100">
+				<input class="onehundred info" type="text" placeholder="info input, size 100">
+				<input class="onehundred warn" type="text" placeholder="warn input, size 100">
+				<input class="onehundred danger" type="text" placeholder="danger input, size 100">
+				<input class="onehundred success" type="text" placeholder="success input, size 100">
 			</div>
 
 			<div class="one-quarter last">
 				<h2>&nbsp;</h2>
-				<input class="onehundred blue" type="text" placeholder="blue input with label, size 100">
-				<label class="help-text label-blue">Just to let you know...this is cool!</label><br>
+				<input class="onehundred info" type="text" placeholder="info input with label, size 100">
+				<label class="help-text label-info">This is just an info label in <strong>blue</strong>.</label><br>
 
-				<input class="onehundred yellow" type="text" placeholder="yellow input with label, size 100">
-				<label class="help-text label-yellow">Whoa there!</label><br>
+				<input class="onehundred warn" type="text" placeholder="warn input with label, size 100">
+				<label class="help-text label-warn">Here we have a <strog>yellow</strog> warning label.</label><br>
 
-				<input class="onehundred red" type="text" placeholder="red input with label, size 100">
-				<label class="help-text label-red">Ohh noes! That's not good.</label><br>
+				<input class="onehundred danger" type="text" placeholder="danger input with label, size 100">
+				<label class="help-text label-danger">Oh, something in <strong>red</strong> means always danger!</label><br>
 
-				<input class="onehundred green" type="text" placeholder="green input with label, size 100">
-				<label class="help-text label-green">Woohoo! That's great!</label><br>
+				<input class="onehundred success" type="text" placeholder="success input with label, size 100">
+				<label class="help-text label-success">Success labels are <strong>green</strong>.</label><br>
 			</div>
 
 			<hr>
@@ -205,7 +210,7 @@
 			<!-- elements -->
 			<div class="one-quarter">
 				<h2>Elements</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+				<p>All form elements like checkboxes, radios and selects are automatically styled just by adding the CSS file and the JavaScript.</p>
 			</div>
 
 			<!-- checkboxes -->
@@ -260,8 +265,8 @@
 				<h2>Textarea</h2>
 			</div>
 			<div class="one-third">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+				<p>We can add to the default styling of textareas using the same helper class that we used on the input boxes.</p>
+				<p>Add any relevant classes for sizing or notices and bam! You're done.</p>
 			</div>
 
 			<div class="two-third last">
@@ -518,72 +523,6 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="#" class="btn large ice">Large</a>
-                        </td>
-                        <td>
-                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn large ice</span>&quot;&gt; Large&lt;/<span class="tag">a</span>&gt;</pre>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#" class="btn rounded yellow">Rounded</a>
-                        </td>
-                        <td>
-                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn rounded yellow</span>&quot;&gt; Rounded&lt;/<span class="tag">a</span>&gt;</pre>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#" class="btn circle pink xxl-icons flat"><i class="icon-heart"></i></a>
-                        </td>
-                        <td>
-                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn circle pink xxl-icons flat</span>&quot;&gt; &lt;<span class="tag">i</span> <span class="cls">class</span>=&quot;<span class="prm">icon-heart</span>&quot;&gt;&lt;/<span class="tag">i</span>&gt; &lt;/<span class="tag">a</span>&gt;</pre>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <hr>
-
-        <div class="one-full">
-			<h2>Button Variants</h2>
-
-			<table class="ns">
-                <thead>
-                    <tr>
-                        <th>Button</th>
-                        <th>Usage</th>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="#" class="btn small red">Small</a>
-                        </td>
-                        <td>
-                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn small red</span>&quot;&gt; Small&lt;/<span class="tag">a</span>&gt;</pre>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#" class="btn medium green">Medium</a>
-                        </td>
-                        <td>
-                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn medium green</span>&quot;&gt; Medium&lt;/<span class="tag">a</span>&gt;</pre>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#" class="btn">Default</a>
-                        </td>
-                        <td>
-                            <pre>&lt;<span class="tag">a</span> <span class="cls">href</span>=&quot;#&quot; <span class="cls">class</span>=&quot;<span class="prm">btn</span>&quot;&gt; Default&lt;/<span class="tag">a</span>&gt;</pre>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
                             <a href="#" class="btn large blue">Large</a>
                         </td>
                         <td>
@@ -613,15 +552,17 @@
         <hr>
 
         <div class="one-full aligncenter">
-	        <h3><span class="rounded magenta">Note:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</h3>
+	        <h3><span class="rounded magenta">Note:</span> Don't forget, you can mix and match the buttons. Large pink rounded, small blue flat, medium green flat rounded ... the choice is yours!</h3>
 		</div>
 
 		<hr>
 
 		<div class="one-third">
-			<h2>Tables</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+			<h1><a name="tables">Tables</a></h1>
+			<p>The default table CSS does everything for you.</p>
+			<p>Simply reference the tables CSS file and you're good to go! Want more? You can add the .table-striped class to alternate each rows background color!</p>
+			<p>Don't like the table bordered?</p>
+			<p>No worries, use the helper class .nb</p>
 		</div>
 		
 		<div class="two-third last">
@@ -640,7 +581,7 @@
 							<code>&lt;table&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Wrapping element for displaying data in a tabular format
 						</td>
 					</tr>
 					<tr>
@@ -648,7 +589,7 @@
 							<code>&lt;thead&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;tr&gt;</code>
+							Container element for table header rows <code>&lt;tr&gt;</code> to label table columns
 						</td>
 					</tr>
 					<tr>
@@ -656,7 +597,7 @@
 							<code>&lt;tbody&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;tr&gt;</code>
+							Container element for table rows <code>&lt;tr&gt;</code> in the body of the table
 						</td>
 					</tr>
 					<tr>
@@ -664,7 +605,7 @@
 							<code>&lt;tr&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code>
+							Container element for a set of table cells <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> that appears on a single row
 						</td>
 					</tr>
 					<tr>
@@ -672,7 +613,7 @@
 							<code>&lt;td&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Default table cell
 						</td>
 					</tr>
 					<tr>
@@ -680,7 +621,7 @@
 							<code>&lt;th&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <code>&lt;thead&gt;</code>
+							Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <code>&lt;thead&gt;</code>
 						</td>
 					</tr>
 					<tr>
@@ -688,7 +629,7 @@
 							<code>&lt;caption&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Description or summary of what the table holds, especially useful for screen readers
 						</td>
 					</tr>
 				</tbody>
@@ -717,7 +658,7 @@
 							<code>&lt;table&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Wrapping element for displaying data in a tabular format
 						</td>
 					</tr>
 					<tr>
@@ -725,7 +666,7 @@
 							<code>&lt;thead&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;tr&gt;</code>
+							Container element for table header rows <code>&lt;tr&gt;</code> to label table columns
 						</td>
 					</tr>
 					<tr>
@@ -733,7 +674,7 @@
 							<code>&lt;tbody&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;tr&gt;</code>
+							Container element for table rows <code>&lt;tr&gt;</code> in the body of the table
 						</td>
 					</tr>
 					<tr>
@@ -741,7 +682,7 @@
 							<code>&lt;tr&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code>
+							Container element for a set of table cells <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> that appears on a single row
 						</td>
 					</tr>
 					<tr>
@@ -749,7 +690,7 @@
 							<code>&lt;td&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Default table cell
 						</td>
 					</tr>
 					<tr>
@@ -757,7 +698,7 @@
 							<code>&lt;th&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <code>&lt;thead&gt;</code>
+							Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <code>&lt;thead&gt;</code>
 						</td>
 					</tr>
 					<tr>
@@ -765,7 +706,7 @@
 							<code>&lt;caption&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Description or summary of what the table holds, especially useful for screen readers
 						</td>
 					</tr>
 				</tbody>
@@ -794,7 +735,7 @@
 							<code>&lt;table&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Wrapping element for displaying data in a tabular format
 						</td>
 					</tr>
 					<tr>
@@ -802,7 +743,7 @@
 							<code>&lt;thead&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;tr&gt;</code>
+							Container element for table header rows <code>&lt;tr&gt;</code> to label table columns
 						</td>
 					</tr>
 					<tr>
@@ -810,7 +751,7 @@
 							<code>&lt;tbody&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;tr&gt;</code>
+							Container element for table rows <code>&lt;tr&gt;</code> in the body of the table
 						</td>
 					</tr>
 					<tr>
@@ -818,7 +759,7 @@
 							<code>&lt;tr&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code>
+							Container element for a set of table cells <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> that appears on a single row
 						</td>
 					</tr>
 					<tr>
@@ -826,7 +767,7 @@
 							<code>&lt;td&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Default table cell
 						</td>
 					</tr>
 					<tr>
@@ -834,7 +775,7 @@
 							<code>&lt;th&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <code>&lt;thead&gt;</code>
+							Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <code>&lt;thead&gt;</code>
 						</td>
 					</tr>
 					<tr>
@@ -842,7 +783,7 @@
 							<code>&lt;caption&gt;</code>
 						</td>
 						<td>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Description or summary of what the table holds, especially useful for screen readers
 						</td>
 					</tr>
 				</tbody>
@@ -851,6 +792,7 @@
 
 		<hr>
 
+		<h1><a name="typo">Typography</a></h1>
 		<div class="one-third">
 			<h1>Heading h1</h1>
 			<h2>Heading h2</h2>
@@ -941,7 +883,7 @@
 		<hr>
 
 		<div class="one-full">
-			<h2>Misc</h2>
+			<h1><a name="misc">Misc</a></h1>
 			<p>
 				This <span class="highlight">highlights</span> other typographic elements that can be used within a site. Or see this <span class="muted">muted text</span> declaration for less important / outdated / deactivated text. And even basic text decorations like <span class="underline">underline</span> or <span class="strikethrough">strikethrough</span> and font styles like <span class="italic">italic</span>, <span class="strong">strong</span> or even <span class="stronger">stronger</span>.<br>
 				These include things like: <code>&lt;sup&gt;</code> <sup>sup?</sup>, <code>&lt;sub&gt;</code> <sub>sub</sub>.
@@ -952,6 +894,445 @@
   Automatically formatted &lt;pre&gt; tags and some pre-defined classes for code / tag highlighting:
   &lt;<span class="tag">tag</span> <span class="cls">parameter</span>=&quot;<span class="prm">value</span>&quot;&gt;Default&lt;/<span class="tag">tag</span>&gt;
 </pre>
+		</div>
+
+		<hr>
+
+		<div class="one-full last">
+			<h2>Basic Tooltips</h2>
+			<p>You can add additional information to any element simply by adding the <code>.tooltip</code> class. The additional information can be stored in the <code>i</code> tag. Only inside of <code>.tooltip</code> the <code>i</code> turns into the tooltip content storage. Outside it works as everybody expect as <i>italic</i> tag.</p>
+			<p>But that's not all: every tooltip can styled with a dedicated color. Let's try it:</p>
+		</div>
+		<div class="one-half">
+			<table class="ns nb">
+				<thead>
+					<tr>
+						<th class="twentyfive aligncenter">Color</th>
+						<th class="aligncenter">Colored Tooltip</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat">Default</span>
+						</td>
+						<td>
+							<span class="tooltip">I am class, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat red">Red</span>
+						</td>
+						<td>
+							<span class="tooltip red">I am red, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat orange">Orange</span>
+						</td>
+						<td>
+							<span class="tooltip orange">I am orange, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat green">Green</span>
+						</td>
+						<td>
+							<span class="tooltip green">I am green, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat blue">Blue</span>
+						</td>
+						<td>
+							<span class="tooltip blue">I am blue, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat pink">Pink</span>
+						</td>
+						<td>
+							<span class="tooltip pink">I am pink, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="one-half last">
+			<table class="ns nb">
+				<thead>
+					<tr>
+						<th class="twentyfive aligncenter">Color</th>
+						<th class="aligncenter">Colored Tooltip</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat magenta">Magenta</span>
+						</td>
+						<td>
+							<span class="tooltip magenta">I am magenta, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat yellow">Yellow</span>
+						</td>
+						<td>
+							<span class="tooltip yellow">I am yellow, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat ice">Ice</span>
+						</td>
+						<td>
+							<span class="tooltip ice">I am ice, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat aqua">Aqua</span>
+						</td>
+						<td>
+							<span class="tooltip aqua">I am aqua, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="btn flat purple">Purple</span>
+						</td>
+						<td>
+							<span class="tooltip purple">I am purple, so hover me!<i>Now you can see the additional infos.</i></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="one-full">
+			<h3>See the tooltips inline in action</h3>
+			<p>Lorem ipsum dolor sit amet, <span class="tooltip orange highlight">Hover me<i>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra.</i></span> consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.</p>
+			<p>Vestibulum mollis mauris enim. <span class="tooltip highlight">Or hover here!<i>This tootips's arrow also has a border.<br />Pure CSS!</i></span>Morbi euismod magna ac lorem rutrum elementum. <span class="tooltip blue underline nb">Hover here too!<i>Tooltip made with pure CSS!</i></span>Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Lorem vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+		</div>
+
+		<hr>
+
+		<div class="one-third">
+			<h2>Combine Classes</h2>
+			<p>Always remember: it is possible to combine almost every CSS class with each other!<br>Try the following:</p>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">tooltip highlight ice</span>&quot;&gt;Hover me!&lt;<span class="tag">i</span>&gt;Tooltip shown while hovering ...&lt;/<span class="tag">i</span>&gt;&lt;/<span class="tag">span</span>&gt;
+</pre>
+			<span class="highlight">Hover here &darr;</span><br>
+			<span class="tooltip large ice btn rounded flat">Hover me!<i>Tooltip shown while hovering ...</i></span>
+		</div>
+
+		<div class="one-third">
+			<h2>Almost every element</h2>
+			<p>You add the <em>tooltip</em> class to almost every html element. But sometimes you have to go more creative. Look at this example:</p>
+<pre>
+&lt;<span class="tag">div</span> <span class="cls">class</span>=&quot;<span class="prm">tooltip onehundred nb</span>&quot;&gt;
+  &lt;<span class="tag">input</span> <span class="cls">class</span>=&quot;<span class="prm">onehundred info</span>" <span class="cls">type</span>=&quot;<span class="prm">text</span>" /&gt;
+  &lt;<span class="tag">i</span>&gt;Tooltip shown while hovering ...&lt;/<span class="tag">i</span>&gt;
+&lt;/<span class="tag">div</span>&gt;
+</pre>
+			<span class="highlight">Hover here &darr;</span><br>
+			<div class="tooltip onehundred nb"><input class="onehundred" type="text" /><i>Tooltip shown while hovering ...</i></div>
+		</div>
+
+		<div class="one-third last">
+			<h2>Complex</h2>
+			<p>You can interlock it where ever you want. Nearly every sub element can wear the <em>tooltip</em> class. Try a cascade like this:</p>
+<pre>
+&lt;<span class="tag">blockquote</span>&gt;
+  &lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">tooltip nb flat</span>&quot;&gt;
+    Less is more!
+    &lt;<span class="tag">i</span>&gt;Said &lt;<span class="tag">b</span>&gt;Mies van der Rohe&lt;/<span class="tag">b</span>&gt; once&lt;/<span class="tag">i</span>&gt;
+  &lt;/<span class="tag">span</span>&gt;
+&lt;/<span class="tag">blockquote</span>&gt;
+</pre>
+			<blockquote><span class="tooltip nb flat">Less is more!<i>Said <b>Mies van der Rohe</b> once</i></span> <small><span class="highlight">&larr; Hover this</span></small></blockquote>
+		</div>
+
+		<hr>
+
+		<div class="one-full">
+			<h2>Notification Badges</h2>
+			<p>One more very helpfull <strong>es:CSS</strong> feature is the <code>.notification</code> class. You can use it for <code>span</code> tags to put a notification badge right next to any element you want.</p>
+			<p>The <code>.notification</code> comes along with several colors. They are easy to use by calling just the color class next to notification. See the examples:</p>
+		</div>
+		<div class="one-half">
+			<h3>Default Style</h3>
+			<table class="ns nb">
+				<thead>
+					<tr>
+						<th class="twentyfive aligncenter">Result</th>
+						<th class="aligncenter">Code</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification">5</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification</span>&quot;&gt;5&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification red">9</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification red</span>&quot;&gt;9&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification orange">7</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification orange</span>&quot;&gt;7&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification green">14</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification green</span>&quot;&gt;14&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification blue">3</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification blue</span>&quot;&gt;3&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification pink">17</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification pink</span>&quot;&gt;17&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification magenta">162</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification magenta</span>&quot;&gt;162&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification yellow">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification yellow</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification ice">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification ice</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification aqua">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification aqua</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification purple">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification purple</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification magenta large">6</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification magenta large</span>&quot;&gt;6&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="one-half last">
+			<h3>Flat Style</h3>
+			<table class="ns nb">
+				<thead>
+					<tr>
+						<th class="twentyfive aligncenter">Result</th>
+						<th class="aligncenter">Code</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification flat">5</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification flat</span>&quot;&gt;5&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification red flat">9</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification red flat</span>&quot;&gt;9&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification orange flat">7</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification orange flat</span>&quot;&gt;7&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification green flat">14</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification green flat</span>&quot;&gt;14&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification blue flat">3</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification blue flat</span>&quot;&gt;3&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification pink flat">17</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification pink flat</span>&quot;&gt;17&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification magenta flat">162</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification magenta flat</span>&quot;&gt;162&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification yellow flat">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification yellow flat</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification ice flat">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification ice flat</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification aqua flat">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification aqua flat</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification purple flat">8</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification purple flat</span>&quot;&gt;8&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter">
+							<span class="notification magenta large flat">6</span>
+						</td>
+						<td>
+<pre>
+&lt;<span class="tag">span</span> <span class="cls">class</span>=&quot;<span class="prm">notification magenta large flat</span>&quot;&gt;6&lt;/<span class="tag">span</span>&gt;
+</pre>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
 		<hr>

@@ -17,15 +17,23 @@ This software is licensed under the
 ----
 
 # To Do:
-### Lots of conceptual work left ...
 
-* ~~bring concept of basic folder structure to an end~~
-* ~~figure out the essentially needed files~~
-* ~~create a simple design with extrem usability~~
-* WIP: keep basic files as generic as possible
-* add tooltip feature
-* research notification feature
-* refactor button-background / -color combinations (make them more unique)
+
+* ~~*bring concept of basic folder structure to an end*~~
+* ~~*figure out the essentially needed files*~~
+* ~~*create a simple design with extrem usability*~~
+* ~~*add tooltip feature*~~
+* ~~*research notification feature*~~
+* ~~*refactor button-background / -color combinations (make them more unique)*~~
+* **WIP: keep basic files as generic as possible**
+* **add install notes**
+* **calculate kb when integrating as HiFi / LoFi version in own project**
+
+#### Release v0.2
+
+* **[NEW]** Tooltips and Notification Badges added
+* **[SOLVE]** refactor button-background / -color combinations
+
 
 #### Release v0.1
 

@@ -218,5 +218,5 @@ To see a detailed example have a look at the "scaffolding" section in the exampl
 * ~~*refactor button-background / -color combinations (make them more unique)*~~ 
 * ~~*add install notes*~~
 * ~~*calculate kb of **es:CSS** when integrating as HiFi / LoFi version in projects*~~
-* **[BUG]**: IE displays tooltips wrong (borders and margins are misplaced 1px)
+* ~~**[BUG]**: IE displays tooltips wrong (borders and margins are misplaced 1px)~~
 * **WIP: keep basic files as generic as possible**

@@ -357,7 +357,6 @@ blockquote {
 	line-height: 150%;
 	color: #eee;
 	background: #333;
-	background-clip: padding-box;
 	border: 5px solid #333;
 	left: -20px;
 	white-space: nowrap;

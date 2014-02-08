@@ -13,13 +13,13 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Es-css by maccypher</title>
+    <title>es:CSS by maccypher</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Es-css</h1>
+        <h1>es:CSS</h1>
         <h2>essential CSS framework</h2>
         <a href="https://github.com/maccypher/es-css" class="button"><small>View project on</small>GitHub</a>
       </div>
@@ -32,55 +32,136 @@
 <a name="escss" class="anchor" href="#escss"><span class="octicon octicon-link"></span></a>es:CSS</h1>
 
 <h2>
-<a name="essential-css-framework" class="anchor" href="#essential-css-framework"><span class="octicon octicon-link"></span></a>essential CSS framework</h2>
+<a name="essential-css3-framework" class="anchor" href="#essential-css3-framework"><span class="octicon octicon-link"></span></a>Essential CSS3 Framework</h2>
 
-<p>This framework is inspired by iKreativ - Workless. I don't wanna present just another clone/fork of "Workless". That's why I built it from scratch, took some of the concepts from iKreativ, adopted some of the techniques and spiced it up with some own knowledge.</p>
+<p>This framework is inspired by iKreativ - Workless. <strong>es:CSS</strong> is NOT just another clone/fork of "Workless". It was completely re-built from scratch by taken some of the concepts and basic structure ideas from Workless, adopted by some new techniques and spiced up with some own knowledge / experience.</p>
+
+<h3>
+<a name="important-note" class="anchor" href="#important-note"><span class="octicon octicon-link"></span></a>Important Note:</h3>
+
+<p>To keep <strong>es:CSS</strong> as lightweight as possible there's no real legacy browser support. Everything below <strong>IE 9</strong>, <strong>Safari 5</strong>, <strong>Firefox 4</strong>, <strong>Opera 10</strong> and <strong>Chrome 4</strong> is not and will never be supported. All versions higher than the listed ones are so called "Modern Browser" and will work fine with <strong>es:CSS</strong>, because they are HTML5 and CSS3 enabled.
+The effort to support old or legacy browsers is too expensive and time consuming.</p>
+
+<p>To see the implemented features in a life demo, head over to the project page:</p>
+
+<p><a href="http://willdesignforfood.de/es-css/">http://willdesignforfood.de/es-css/</a></p>
 
 <h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>supports fluid, no fixed-width webpages</li>
+<li>unified form element for all browsers</li>
+</ul><hr><h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>This software is licensed under the </p>
 
-<p><a href="dbad_license.md">Don't Be A Dick Licens</a></p>
+<p><a href="https://github.com/maccypher/es-css/dbad_license.md">Don't Be A Dick License</a></p>
 
-<hr><h1>
-<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To Do:</h1>
+<p>and</p>
 
-<h3>
-<a name="lots-of-conceptual-work-left-" class="anchor" href="#lots-of-conceptual-work-left-"><span class="octicon octicon-link"></span></a>Lots of conceptual work left ...</h3>
+<p><a href="https://github.com/maccypher/es-css/license.md">MIT</a></p>
+
+<hr><h2>
+<a name="releases" class="anchor" href="#releases"><span class="octicon octicon-link"></span></a>Releases</h2>
+
+<h4>
+<a name="release-v03" class="anchor" href="#release-v03"><span class="octicon octicon-link"></span></a>Release v0.3</h4>
 
 <ul>
-<li><del>bring concept of basic folder structure to an end</del></li>
-<li><del>figure out the essentially needed files</del></li>
-<li><del>create a simple design with extrem usability</del></li>
-<li>WIP: keep basic files as generic as possible</li>
+<li>
+<strong>[NEW]</strong> Form element styling re-designed (tiny rounded corners)</li>
+<li>
+<strong>[UPDATE]</strong> Updated sprite image for form elements and updated PSD resource file</li>
+<li>
+<strong>[DELETE]</strong> Got rid of "modernizr.js", because of droped legacy browser support</li>
+<li>
+<strong>[ENHANCEMENT]</strong> Partly refactored and cleaned up CSS files</li>
+</ul><h4>
+<a name="release-v02" class="anchor" href="#release-v02"><span class="octicon octicon-link"></span></a>Release v0.2</h4>
+
+<ul>
+<li>
+<strong>[NEW]</strong> Tooltips and Notification Badges added</li>
+<li>
+<strong>[ENHANCEMENT]</strong> refactored button-background / -color combinations</li>
+<li>
+<strong>[ENHANCEMENT]</strong> unified color classes / color-class combinations</li>
 </ul><h4>
 <a name="release-v01" class="anchor" href="#release-v01"><span class="octicon octicon-link"></span></a>Release v0.1</h4>
 
 <ul>
 <li>initial commit</li>
-</ul><hr><h2>
-<a name="folder-structure" class="anchor" href="#folder-structure"><span class="octicon octicon-link"></span></a>Folder Structure</h2>
+</ul><hr><h3>
+<a name="folder-structure--contents" class="anchor" href="#folder-structure--contents"><span class="octicon octicon-link"></span></a>Folder Structure &amp; Contents</h3>
 
-<p>/root</p>
+<pre><code>/root
+     /assets
+            /css
+            /font
+            /img
+            /js
+</code></pre>
 
-<ul>
-<li>assets
-
-<ul>
-<li>css</li>
-<li>font</li>
-<li>img</li>
-<li>js</li>
-</ul>
-</li>
-</ul><h4>
+<h4>
 <a name="assetscss" class="anchor" href="#assetscss"><span class="octicon octicon-link"></span></a><a href="es-css/assets/css/">assets/css/</a>
 </h4>
 
-<p>Contains all basic CSS files. Put your custom / app specific CSS files in here. The folder contains a php file: "<strong><a href="es-css/assets/css/minified.css.php">minified.css.php</a></strong>". If you host your project on php supported webspace, you can use this php file to minify all you CSS.</p>
+<p>Contains all basic CSS files. The folder contains a php file: "<strong><a href="es-css/assets/css/minified.css.php">minified.css.php</a></strong>". If you host your project on php supported webspace, you can use this php file to minify all your CSS on the fly.</p>
 
-<p>Instead of of using:</p>
+<h4>
+<a name="assetsfonts" class="anchor" href="#assetsfonts"><span class="octicon octicon-link"></span></a><a href="es-css/assets/fonts/">assets/fonts/</a>
+</h4>
+
+<p>This folder contains the FontAwesome icon font file. If needed you could put your custom font files in here. But <strong>don't forget to link them</strong>! Referencing wont happen automatically. ;)</p>
+
+<h4>
+<a name="assetsimg" class="anchor" href="#assetsimg"><span class="octicon octicon-link"></span></a><a href="es-css/assets/img/">assets/img/</a>
+</h4>
+
+<p>The <strong>img/</strong> folder only contains the sprite image for "<strong>uniform</strong>" jquery extension to style form elements.
+You can find a PSD resource of the used uniform sprite in the "<strong><a href="src/">src/</a></strong>" folder too.</p>
+
+<h4>
+<a name="assetsjs" class="anchor" href="#assetsjs"><span class="octicon octicon-link"></span></a><a href="es-css/assets/js/">assets/js/</a>
+</h4>
+
+<h6>
+<a name="jquery-202minjs" class="anchor" href="#jquery-202minjs"><span class="octicon octicon-link"></span></a>jquery-2.0.2.min.js</h6>
+
+<p>The jQuery library. It's basically needed for the <strong>uniform</strong> extension.</p>
+
+<h6>
+<a name="jqueryuniformminjs" class="anchor" href="#jqueryuniformminjs"><span class="octicon octicon-link"></span></a>jquery.uniform.min.js</h6>
+
+<p>This jQuery extension styles all form elements in a sexy way and it's cross-browser compatible. So your forms will look unified in all browsers.</p>
+
+<h6>
+<a name="appjs" class="anchor" href="#appjs"><span class="octicon octicon-link"></span></a>app.js</h6>
+
+<p>If you need to put some custom javascript somewhere, this is the right place. Initially the file holds some instructions to initialize the <strong>uniform jquery extension</strong>, but you can extend it as you like.</p>
+
+<hr><h2>
+<a name="---installation---" class="anchor" href="#---installation---"><span class="octicon octicon-link"></span></a>-- Installation --</h2>
+
+<h5>
+<a name="installing-escss-is-as-easy-as-it-can-be" class="anchor" href="#installing-escss-is-as-easy-as-it-can-be"><span class="octicon octicon-link"></span></a>Installing <em>es:CSS</em> is as easy as it can be:</h5>
+
+<p>Just drop the needed parts or even all files from the <code>assets/</code> folder into your project folder and reference the files in your html.</p>
+
+<p>That's it!</p>
+
+<hr><h3>
+<a name="install-notes" class="anchor" href="#install-notes"><span class="octicon octicon-link"></span></a>Install Notes</h3>
+
+<h4>
+<a name="referencing-the-css-files" class="anchor" href="#referencing-the-css-files"><span class="octicon octicon-link"></span></a>Referencing the CSS files</h4>
+
+<p>Referencing the CSS can be done in different ways:</p>
+
+<h5>
+<a name="oldschool" class="anchor" href="#oldschool"><span class="octicon octicon-link"></span></a>Oldschool:</h5>
 
 <pre><code>...
 &lt;link href="assets/css/typo.css" rel="stylesheet"&gt;
@@ -89,61 +170,187 @@
 &lt;link href="assets/css/helpers.css" rel="stylesheet"&gt;
 &lt;link href="assets/css/scaffold.css" rel="stylesheet"&gt;
 &lt;link href="assets/css/icons.css" rel="stylesheet"&gt;
-&lt;link href="assets/css/plugins.css" rel="stylesheet"&gt;
 &lt;link href="assets/css/buttons.css" rel="stylesheet"&gt;
 ...
 </code></pre>
 
-<p>you can keep it short in just on line in your HTML:</p>
+<h5>
+<a name="newschool" class="anchor" href="#newschool"><span class="octicon octicon-link"></span></a>Newschool:</h5>
+
+<pre><code>@import: url(typo.css);
+@import: url(forms.css);
+@import: url(tables.css);
+@import: url(helpers.css);
+@import: url(scaffold.css);
+@import: url(icons.css);
+@import: url(buttons.css);
+...
+</code></pre>
+
+<h5>
+<a name="pretty-cool" class="anchor" href="#pretty-cool"><span class="octicon octicon-link"></span></a>Pretty cool:</h5>
 
 <pre><code>...
 &lt;link href="assets/css/minified.css.php" rel="stylesheet"&gt;
 ...
 </code></pre>
 
-<p>To add your custom CSS file into the minifier add it at the end, but right before the "<strong>ob_end_flush();</strong>" function. Like this:</p>
+<p>With this amazing little php script, you can easily minify all your css files on the fly without loosing the development status. You don't have to care about minification of your css and minify them by hand everytime you modified something.</p>
 
-<pre><code>include('your_custom_css.css');
+<p>Inside the script you can easily load all needed css files. To add your own custom CSS file into the minifier, simply add it to the end, right before the "<strong>ob_end_flush();</strong>" function is called. Like this:</p>
+
+<pre><code>&lt;?php
+    ...
+    include('your_custom_style.css');
+    ob_end_flush();
+?&gt;
 </code></pre>
 
-<h4>
-<a name="assetsfonts" class="anchor" href="#assetsfonts"><span class="octicon octicon-link"></span></a><a href="es-css/assets/fonts/">assets/fonts/</a>
-</h4>
+<h3>
+<a name="javascript-libraries" class="anchor" href="#javascript-libraries"><span class="octicon octicon-link"></span></a>Javascript Libraries</h3>
 
-<p>This folder contains the basically the FontAwesome icon font file. If needed you could put your custom font files in here. But <strong>don't forget to link them</strong>! This wont happen automatically. ;)</p>
+<p>To style form elements with <strong>es:CSS</strong> you need a jquery library. At least Version in 1.6.x. or higher. Included in the <strong>es:CSS</strong> package is jquery in version 2.0.2.</p>
 
-<h4>
-<a name="assetsimg" class="anchor" href="#assetsimg"><span class="octicon octicon-link"></span></a><a href="es-css/assets/img/">assets/img/</a>
-</h4>
+<p>Furthermore you need the <strong>jquery.uniform.min.js</strong> to style form elements (radio buttons, checkboxes and so on).
+<strong>es:CSS</strong> includes two more javascript files:</p>
 
-<p>The <strong>img/</strong> folder only contains the sprite image for "<strong>uniform</strong>" form styling.
-You can find the PSD resource of the used uniform sprite in the "<strong><a href="src/">src/</a></strong>" folder.</p>
+<ul>
+<li>app.js (contains custom JS commands and the <strong>uniform style initialization</strong>)</li>
+</ul><h4>
+<a name="important-note-1" class="anchor" href="#important-note-1"><span class="octicon octicon-link"></span></a>IMPORTANT NOTE:</h4>
 
-<h4>
-<a name="assetsjs" class="anchor" href="#assetsjs"><span class="octicon octicon-link"></span></a><a href="es-css/assets/js/">assets/js/</a>
-</h4>
+<p>If you'd like to style form elements, you have to keep the following order while referencing the JS libraries in your html file <code>&lt;head&gt;</code>:</p>
 
-<p>4 files are located here:</p>
+<ol>
+<li>link the <strong>uniform.default.css</strong> at the very first</li>
+<li>now load the <strong>jquery</strong> library</li>
+<li>after this, load the <strong>jquery.uniform.min.js</strong> extension</li>
+<li>and last, but not least load the initialization script (<strong>app.js</strong>) or just call it directly in your <code>&lt;head&gt;</code> tag:</li>
+</ol><p>Example:</p>
 
-<pre><code>jquery-2.0.2.min.js
+<pre><code>&lt;link href="assets/css/uniform.default.css" rel="stylesheet"&gt;
+&lt;script src="assets/js/jquery-2.0.2.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/jquery.uniform.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/app.js"&gt;&lt;/script&gt;
 </code></pre>
 
-<p>Of course jQuery. It's basically needed for "<strong>uniform.js</strong>".</p>
+<hr><h3>
+<a name="size-matters" class="anchor" href="#size-matters"><span class="octicon octicon-link"></span></a>Size matters!</h3>
 
-<pre><code>jquery.uniform.min.js
+<p>The very essential integration without icons and form styling will cost you only <strong>32kB</strong> of pure CSS! In words: <strong>thirty two</strong>!</p>
+
+<p>Even a full featured integration including form styling and icon support will cost you only less than <strong>500kB</strong> (486kb to be exact).</p>
+
+<hr><h1>
+<a name="css-class-definitions-cheat-sheet" class="anchor" href="#css-class-definitions-cheat-sheet"><span class="octicon octicon-link"></span></a>CSS Class Definitions (Cheat Sheet)</h1>
+
+<p>First things first: in es:CSS nothing is engraved in stone! It's a basic setup to save you time and helps prevent basic or repetitive tasks.</p>
+
+<p>You extend it, modify it or just strip it in the way you want. It's easy to do this because everything happens in the CSS files.</p>
+
+<p>All CSS files are named like what they do:</p>
+
+<ul>
+<li>
+<strong>scaffold.css</strong> keeps basic definitions about basic elements like <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> and some pre-defined specials like <code>&lt;logo&gt;</code>, <code>&lt;nav&gt;</code> and the responsive box definitions</li>
+<li>in <strong>typo.css</strong> you'll find all basic font definitions for <code>&lt;h1&gt;</code> - <code>&lt;h3&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and some helper classes for list element styling and text colors</li>
+<li>
+<strong>tables.css</strong> contains basic table styling for default <code>&lt;table&gt;</code> tags and some special classes for extended table design</li>
+<li>
+<strong>forms.css</strong> pre-defines default values for basic form elements and gives some additional classes to style <code>&lt;label&gt;</code> tags</li>
+<li>
+<strong>buttons.css</strong> is an additional css file for button styling</li>
+<li>in <strong>icons.css</strong> are all icons defined (icons are made of FontAwesome webfont)</li>
+<li>the <strong>helpers.css</strong> file contains everything else, like tooltip classes, notification badges, <code>&lt;blockquote&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code> and some generic specials</li>
+<li>
+<strong>uniform.default.css</strong> is only filled with the uniform related classes, that are used to style <code>&lt;form&gt;</code> elements</li>
+</ul><p>Let's digg a little bit deeper:</p>
+
+<p>Building projects with a responsive design is as easy as installing <strong>es:CSS</strong> itself. After referencing all needed CSS files in your HTML file just create some <code>&lt;div&gt;</code> containers and give them one of the self-explaining class names:</p>
+
+<pre><code>.one-full       (100% width)
+.one-half       (48% width plus 4% margin-right)
+.one-third      (30% width plus 5% margin-right)
+.two-third      (65% width plus 5% margin-right)
+.one-quarter    (22% width plus 4% margin-right)
 </code></pre>
 
-<p>This jQuery plugin styles all form elements in a sexy way. But the best thing is, that it styles form elements cross-browser compatible.</p>
+<p>There's only one thing you have to pay attention at: add the <code>.last</code> class to the "last" container in row, if you use more than one container in a row, to reset the right margins and floating definitions.</p>
 
-<pre><code>modernizr.min.js
-</code></pre>
+<p>To see a detailed example have a look at the "scaffolding" section in the example <a href="/es-css/index.html#scaffold">index.html</a>.</p>
 
-<p>Modernizr is needed to enable HTML5 &amp; CSS3 features in old browsers.</p>
+<hr><h1>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h1>
 
-<pre><code>app.js
-</code></pre>
+<h5>
+<a name="workless-by-ikreativ" class="anchor" href="#workless-by-ikreativ"><span class="octicon octicon-link"></span></a>Workless by iKreativ</h5>
 
-<p>If you need to put some custom javascript somewhere, this is the right place. Initially the file holds some instructions to init uniform.js, but you can extend it as you like.</p>
+<ul>
+<li>by Scott Parry (<a href="http://twitter.com/iKreativ">@iKreativ</a>) / <a href="http://ikreativ.com/">http://ikreativ.com/</a>
+</li>
+<li>Project webpage: <a href="https://github.com/iKreativ/Workless">https://github.com/iKreativ/Workless</a>
+</li>
+<li>License: <a href="http://philsturgeon.co.uk/code/dbad-license/">DBAD License</a>
+</li>
+</ul><h5>
+<a name="jquery-v202" class="anchor" href="#jquery-v202"><span class="octicon octicon-link"></span></a>jQuery v2.0.2</h5>
+
+<ul>
+<li>jQuery (c) 2005, 2013 jQuery Foundation, Inc.</li>
+<li>Project webpage: <a href="http://jquery.org">http://jquery.org</a>
+</li>
+<li>License: <a href="http://jquery.org/license">http://jquery.org/license</a>
+</li>
+</ul><h5>
+<a name="uniform-v210" class="anchor" href="#uniform-v210"><span class="octicon octicon-link"></span></a>Uniform v2.1.0</h5>
+
+<ul>
+<li>Uniform (c) 2009 Josh Pyles / Pixelmatrix Design LLC <a href="http://pixelmatrixdesign.com">http://pixelmatrixdesign.com</a>
+</li>
+<li>Project webpage: <a href="http://uniformjs.com/">http://uniformjs.com/</a>
+</li>
+<li>License: <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>
+</li>
+</ul><h5>
+<a name="fontawesome" class="anchor" href="#fontawesome"><span class="octicon octicon-link"></span></a>FontAwesome</h5>
+
+<ul>
+<li>FontAwesome 4.0.3 by <a href="http://twitter.com/davegandy">Dave Gandy</a>
+</li>
+<li>Project webpage: <a href="http://fontawesome.io/">http://fontawesome.io/</a>
+</li>
+<li>License: <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>
+</li>
+</ul><h5>
+<a name="escss-itself--everything-else" class="anchor" href="#escss-itself--everything-else"><span class="octicon octicon-link"></span></a>es:CSS itself &amp; Everything else</h5>
+
+<ul>
+<li>Copyright (c) 2013 - 2014 by Burkhard Mudrick (<a href="http://twitter.com/maccypher">@maccypher</a>)</li>
+<li>Project webpage (showcase): <a href="http://willdesignforfood.de/es-css/">http://willdesignforfood.de/es-css/</a>
+</li>
+<li>Github: <a href="https://github.com/maccypher/es-css">Repository</a> | <a href="http://maccypher.github.io/es-css/">Project Page</a>
+</li>
+<li>License: <a href="https://github.com/maccypher/es-css/dbad_license.md">DBAD License</a>
+</li>
+</ul><hr><h1>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To Do:</h1>
+
+<ul>
+<li><del><em>bring concept of basic folder structure to an end</em></del></li>
+<li><del><em>figure out the essentially needed files</em></del></li>
+<li><del><em>create a simple design with extrem usability</em></del></li>
+<li><del><em>add tooltip feature</em></del></li>
+<li><del><em>research notification feature</em></del></li>
+<li>
+<del><em>refactor button-background / -color combinations (make them more unique)</em></del> </li>
+<li><del><em>add install notes</em></del></li>
+<li><del><em>calculate kb of *</em>es:CSS** when integrating as HiFi / LoFi version in projects*</del></li>
+<li><del><em>**[BUG]</em>*: IE displays tooltips wrong (borders and margins are misplaced 1px)*</del></li>
+<li><del><em>get rid of modernizr.js, because the effort of supporting old browsers is too expensive</em></del></li>
+<li>define some basic HTML5 reset / default CSS parameters in <strong>scaffold.css</strong>
+</li>
+<li><strong>WIP: keep basic files as generic as possible</strong></li>
+</ul>
         </section>
 
         <aside id="sidebar">

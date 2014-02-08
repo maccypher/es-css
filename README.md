@@ -1,7 +1,12 @@
 # es:CSS
-## Essential CSS Framework
+## Essential CSS3 Framework
 
-This framework is inspired by iKreativ - Workless. I don't wanna present just another clone/fork of "Workless". That's why I built it from scratch, took some of the concepts from Workless, adopted some of the techniques and spiced it up with some own knowledge.
+This framework is inspired by iKreativ - Workless. **es:CSS** is NOT just another clone/fork of "Workless". It was completely re-built from scratch by taken some of the concepts and basic structure ideas from Workless, adopted by some new techniques and spiced up with some own knowledge / experience.
+
+### Important Note:
+
+To keep **es:CSS** as lightweight as possible there's no real legacy browser support. Everything below **IE 9**, **Safari 5**, **Firefox 4**, **Opera 10** and **Chrome 4** is not and will never be supported. All versions higher than the listed ones are so called "Modern Browser" and will work fine with **es:CSS**, because they are HTML5 and CSS3 enabled.
+The effort to support old or legacy browsers is too expensive and time consuming.
 
 To see the implemented features in a life demo, head over to the project page:
 
@@ -18,11 +23,18 @@ To see the implemented features in a life demo, head over to the project page:
 
 This software is licensed under the 
 
-[Don't Be A Dick License](dbad_license.md)
+[Don't Be A Dick License](https://github.com/maccypher/es-css/dbad_license.md)
 
 ----
 
 ## Releases
+
+#### Release v0.3
+
+* **[NEW]** Form element styling re-designed (tiny rounded corners)
+* **[UPDATE]** Updated sprite image for form elements and updated PSD resource file
+* **[DELETE]** Got rid of "modernizr.js", because of droped legacy browser support
+* **[ENHANCEMENT]** Partly refactored and cleaned up CSS files
 
 #### Release v0.2
 
@@ -70,10 +82,6 @@ The jQuery library. It's basically needed for the **uniform** extension.
 ###### jquery.uniform.min.js
 
 This jQuery extension styles all form elements in a sexy way and it's cross-browser compatible. So your forms will look unified in all browsers.
-
-###### modernizr.min.js
-
-Modernizr is needed to enable HTML5 & CSS3 features in old browsers. This library is optional.
 
 ###### app.js
 
@@ -138,16 +146,13 @@ Inside the script you can easily load all needed css files. To add your own cust
 
 ### Javascript Libraries
 
-To style form elements with **es:CSS** you need a jquery library. At least Version 1.10.x. Included in the **es:CSS** package is jquery in version 2.0.2.
+To style form elements with **es:CSS** you need a jquery library. At least Version in 1.6.x. or higher. Included in the **es:CSS** package is jquery in version 2.0.2.
 
 Furthermore you need the **jquery.uniform.min.js** to style form elements (radio buttons, checkboxes and so on).
 **es:CSS** includes two more javascript files:
 
 * app.js (contains custom JS commands and the **uniform style initialization**)
-* modernizr.min.js (optional needed to support older browsers)
-	
-If you don't want to support old browsers simply drop modernizr.
-And if form element styling isn't necessary for your project, drop every other JS library too.
+
 
 #### IMPORTANT NOTE:
 
@@ -208,6 +213,42 @@ To see a detailed example have a look at the "scaffolding" section in the exampl
 
 ----
 
+#Credits
+
+##### Workless by iKreativ
+
+* by Scott Parry ([@iKreativ](http://twitter.com/iKreativ)) / <http://ikreativ.com/>
+* Project webpage: <https://github.com/iKreativ/Workless>
+* License: [DBAD License](http://philsturgeon.co.uk/code/dbad-license/)
+
+##### jQuery v2.0.2
+
+* jQuery (c) 2005, 2013 jQuery Foundation, Inc.
+* Project webpage: <http://jquery.org>
+* License: <http://jquery.org/license>
+
+##### Uniform v2.1.0
+
+* Uniform (c) 2009 Josh Pyles / Pixelmatrix Design LLC <http://pixelmatrixdesign.com>
+* Project webpage: <http://uniformjs.com/>
+* License: [MIT License](http://www.opensource.org/licenses/mit-license.php)
+
+##### FontAwesome
+
+* FontAwesome 4.0.3 by [Dave Gandy](http://twitter.com/davegandy)
+* Project webpage: <http://fontawesome.io/>
+* License: [SIL OFL 1.1](http://scripts.sil.org/OFL)
+
+##### es:CSS itself & Everything else
+
+* Copyright (c) 2013 - 2014 by Burkhard Mudrick ([@maccypher](http://twitter.com/maccypher))
+* Project webpage (showcase): <http://willdesignforfood.de/es-css/>
+* Github: [Repository](https://github.com/maccypher/es-css) | [Project Page](http://maccypher.github.io/es-css/)
+* License: [DBAD License](https://github.com/maccypher/es-css/dbad_license.md)
+
+
+----
+
 # To Do:
 
 * ~~*bring concept of basic folder structure to an end*~~
@@ -218,5 +259,7 @@ To see a detailed example have a look at the "scaffolding" section in the exampl
 * ~~*refactor button-background / -color combinations (make them more unique)*~~ 
 * ~~*add install notes*~~
 * ~~*calculate kb of **es:CSS** when integrating as HiFi / LoFi version in projects*~~
-* ~~**[BUG]**: IE displays tooltips wrong (borders and margins are misplaced 1px)~~
+* ~~***[BUG]**: IE displays tooltips wrong (borders and margins are misplaced 1px)*~~
+* ~~*get rid of modernizr.js, because the effort of supporting old browsers is too expensive*~~
+* define some basic HTML5 reset / default CSS parameters in **scaffold.css**
 * **WIP: keep basic files as generic as possible**

@@ -25,6 +25,10 @@ This software is licensed under the
 
 [Don't Be A Dick License](https://github.com/maccypher/es-css/dbad_license.md)
 
+and
+
+[MIT](https://github.com/maccypher/es-css/license.md)
+
 ----
 
 ## Releases

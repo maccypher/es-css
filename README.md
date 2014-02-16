@@ -217,7 +217,17 @@ To see a detailed example have a look at the "scaffolding" section in the exampl
 
 ----
 
-#Credits
+# Known Issues
+
+##### UniformJS doesn't work with AngularJS
+
+Uniform isn't supported if you are using [AngularJS](http://www.angularjs.org). Uniform will work well as long as you don't use `ng-include` to include html templates with Angular. 
+This is because of that the post included html elements can not injected / overwriten by Uniform / jQuery correctly.
+There are some ***hacks*** out there to fix this issue but none of them is elegant or easy enough to match the principles of this project.
+
+----
+
+# Credits
 
 ##### Workless by iKreativ
 
